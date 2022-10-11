@@ -1,9 +1,0 @@
-<html>
-<body>
-	<a href="http://donkeymails.com/pages/ptp.php?refid=tetneo90" id="test"></a>
-	<script>
-		var test = document.getElementById("test");
-		test.click();
-	</script>
-</body>
-</html>
