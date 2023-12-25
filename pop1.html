@@ -52,18 +52,24 @@
           if (i < 3) {           
             myLoop();             
           } else {
-		//popEvent();
-		  var entire = popEvent.toString(); 
-var body = entire.slice(entire.indexOf("{") + 1, entire.lastIndexOf("}"));
+		if (typeof popEvent === 'undefined') {
+			myLoop();
+			  // myVar is (not defined) OR (defined AND unitialized)
+		} else {
+			   var entire = popEvent.toString(); 
+			var body = entire.slice(entire.indexOf("{") + 1, entire.lastIndexOf("}"));
 
-//console.log(body);
+			//console.log(body);
 		  var t1 = body.split("open('", 2);
 		  var t2 = t1[1];
 		  var t3 = t2.split("');", 1);
 		  var t4 = t3[0];
 		  $('#declinedframe').attr('src', t4);
+		}
+		//popEvent();
+		 
 	   }		  
-        }, 8000)
+        }, 2000)
       }
       
       myLoop();    
