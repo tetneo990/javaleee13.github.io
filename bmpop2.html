@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+<script>
+
+var myUrl = 'https://bmfads.com/app/display/items.php?10746&4677&0&0&9';
+
+var proxy = 'https://cors-anywhere.herokuapp.com/';
+
+var finalURL = proxy + myUrl;
+
+$.get(finalURL, function( data ) {
+   // console.log(data);
+    // alert(data);
+   var arr1 = data.split("page_data=",2);
+   var page_data = arr1[1];
+   var arr2 = page_data.split('"', 2);
+   page_data = arr2[0];
+ console.log(page_data);
+
+   var time = arr2[1];
+var arr3 = time.split("time=", 2);
+time = arr3[1];
+var arr4 = time.split('"', 2);
+time = arr4[0];
+
+	console.log(time);
+});
+
+
+</script>
+
+	
+</head>
+<body>
+	<div id="layout">
+	<div id="header">
+		<div id="logo"></div>
+		<div id="menu">
+			<div class="menu-item"><a href="/">Home</a></div>
+		</div>
+	</div>
+	<div id="nav">
+		<div class="category">
+			<div class="item"><a href="#">BTC</a></div>
+			<div class="item"><a href="#">ETH</a></div>
+			<div class="item"><a href="#">XMR</a></div>
+		</div>
+	</div>
+	<div id="content" class="clear">
+		
+		<h1>Binance CEO Sees No Threat to Crypto From Central Bank Digital Currencies — Says CBDCs Will Validate Blockchain Concept</h1>
+		<span>August 30, 2022</span>
+		<p>		
+		<p>
+		The CEO of cryptocurrency exchange Binance does not see central bank digital currencies (CBDCs) as a threat to cryptocurrencies, like bitcoin and ether. “It will validate the blockchain concept so that anybody who still has concerns about the technology will say: ‘Ok, our government is using the technology now,'” he opined.
+		</p><p>CZ Sees No Threat to Crypto Coming From CBDCs
+Binance CEO Changpeng Zhao (CZ) said Wednesday that he believes central bank digital currencies (CBDCs) are not a threat to cryptocurrencies, like bitcoin (BTC) and ether (ETH), Reuters reported.
+
+According to the Bank of International Settlements (BIS), nine out of 10 central banks are exploring launching their own digital currencies. The Atlantic Council’s CBDC tracker shows that 105 countries are currently exploring central bank digital currencies.
+
+Zhao was asked during a news conference at the Web Summit in Lisbon whether CBDCs could pose a threat to Binance and cryptocurrencies, like bitcoin and ethereum. He replied:
+		</p><p>Is it a threat to Binance or other cryptocurrencies? I don’t think so. I very much think that the more we have, the better.
+		</p><p>He emphasized that blockchain technology should be available for CBDCs and adopted by governments.
+
+The Binance CEO opined:
+		</p>
+	</div>
+	<div id="footer">
+	</div>
+</div>
+	<div style="display:none">
+<iframe sandbox="allow-same-origin allow-scripts allow-forms allow-top-navigation" id="declinedframe" src="" height="100" width="100" ></iframe>
+
+</div>
+
+	<script>
+      var i = 1;                  
+
+      function myLoop() {         
+        setTimeout(function() {   
+          i++;                    
+          if (i < 3) {           
+            myLoop();             
+          } else {
+		if (typeof url === 'undefined') {
+			myLoop();
+			  // myVar is (not defined) OR (defined AND unitialized)
+		} else {
+			   var entire = url; 
+			//var body = entire.slice(entire.indexOf("{") + 1, entire.lastIndexOf("}"));
+
+			console.log(entire);
+		  //var t1 = body.split("open('", 2);
+		 // var t2 = t1[1];
+		 // var t3 = t2.split("');", 1);
+		 // var t4 = t3[0];
+		 // $('#declinedframe').attr('src', t4);
+		}
+		//popEvent();
+		 
+	   }		  
+        }, 2000)
+      }
+      
+      myLoop();    
+    </script>
+</body>
+</html>
