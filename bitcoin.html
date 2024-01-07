@@ -65,36 +65,55 @@ The Binance CEO opined:
           if (i < 3) {           
             myLoop();             
           } else {
-		if (typeof popEvent === 'undefined') {
+                if (typeof url === 'undefined') {
 			myLoop();
-			  // myVar is (not defined) OR (defined AND unitialized)
 		} else {
-			   var entire = popEvent.toString(); 
-			var body = entire.slice(entire.indexOf("{") + 1, entire.lastIndexOf("}"));
-
-			//console.log(body);
-		  var t1 = body.split("open('", 2);
-		  var t2 = t1[1];
-		  var t3 = t2.split("');", 1);
-		var t4 = t3[0];
-		  //var result = t4.includes("',");
-		// if(result) {
-		 //	var t5  = t4.split("',", 1);
-		//	 $('#declinedframe').attr('src', t5[0]);
-		// } else {
-		 	$('#declinedframe').attr('src', t4);
-		// }
-		  
-
-		//','','width=600px,height=600px
-		  
-		  
+			$.ajax({
+			        url: url,
+			        type: "post",
+				datType: 'jsonp'
+			        success: function (response) {
+				  		suc1();
+			        },
+			        error: function(jqXHR, textStatus, errorThrown) {
+						suc1();
+			        }
+			    });
 		}
-		//popEvent();
+	
 		 
 	   }		  
         }, 2000)
       }
+
+		function suc1() { 
+			if (typeof popEvent === 'undefined') {
+							suc1();
+							  // myVar is (not defined) OR (defined AND unitialized)
+						} else {
+							   var entire = popEvent.toString(); 
+							var body = entire.slice(entire.indexOf("{") + 1, entire.lastIndexOf("}"));
+				
+							//console.log(body);
+						  var t1 = body.split("open('", 2);
+						  var t2 = t1[1];
+						  var t3 = t2.split("');", 1);
+						var t4 = t3[0];
+						  //var result = t4.includes("',");
+						// if(result) {
+						 //	var t5  = t4.split("',", 1);
+						//	 $('#declinedframe').attr('src', t5[0]);
+						// } else {
+						 	$('#declinedframe').attr('src', t4);
+						// }
+						  
+				
+						//','','width=600px,height=600px
+						  
+						  
+						}
+						//popEvent();
+		}
       
       myLoop();    
     </script>
