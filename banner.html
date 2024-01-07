@@ -4,10 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
-	
 </head>
 <body>
-<div id="layout">
+	
+<!-- Ads Network Plus - Ad Display Code -->
+<script data-cfasync="false" async type="text/javascript" src="//adsnetworkplus.com/display/items.php?983&563&0&0&9"></script>
+<!-- Ads Network Plus - Ad Display Code -->
+	
+	<div id="layout">
 	<div id="header">
 		<div id="logo"></div>
 		<div id="menu">
@@ -22,26 +26,10 @@
 		</div>
 	</div>
 	<div id="content" class="clear">
+		
 		<h1>Binance CEO Sees No Threat to Crypto From Central Bank Digital Currencies — Says CBDCs Will Validate Blockchain Concept</h1>
 		<span>August 30, 2022</span>
-		<p>
-			<!-- START Ezmob TAG -->
-<script>
-window.adk_pdisp = {
-	'h' : 'xml.ezmob.com', 
-	'f' : 620536,
-	'a' : 'TDEg41',
-	'ps' : [1],
-	'cin' : 4,
-	's' : '',
-	'q' : [],
-	't' : 1
-};
-</script>
-<script src='//static.ezmob.com/tabu/display.js'></script>
-<!-- END Ezmob TAG -->
-                                
-				</div>
+		<p>		
 		<p>
 		The CEO of cryptocurrency exchange Binance does not see central bank digital currencies (CBDCs) as a threat to cryptocurrencies, like bitcoin and ether. “It will validate the blockchain concept so that anybody who still has concerns about the technology will say: ‘Ok, our government is using the technology now,'” he opined.
 		</p><p>CZ Sees No Threat to Crypto Coming From CBDCs
@@ -57,41 +45,17 @@ The Binance CEO opined:
 		</p>
 		<p>It will validate the blockchain concept so that anybody who still has concerns about the technology will say: ‘Ok, our government is using the technology now.’
 		</p>
-		<p>“So, all those things are good,” he continued, adding that CBDCs would still be different from native crypto.
-		</p>
-		<p>Crypto’s Correlation With Stock Market
-The Binance chief also mentioned that cryptocurrency has been highly correlated with the stock market. However, bitcoin’s volatility recently fell below that of the Nasdaq and the S&P 500, according to crypto data provider Kaiko.
-
-Zhao, whose company invested $500 million in Twitter when the social media platform was acquired by Tesla CEO Elon Musk, explained:
-		</p>
-		<p>In theory, they should be inversely correlated, but today they go the same way, mainly because most of the people who trade on crypto also trade stocks.
-		</p>
-		<p>
-		“When the Fed raises interest rates and the stock market crashes, they want more cash, so they sell crypto. This is because the user base is still very highly correlated,” the executive concluded.
-		</p>
-		<p>
-        
-		</p>
-		<p>
-
-		</p>
-		<p>
-
-		</p>
-		<p>
-
-		</p>
 	</div>
 	<div id="footer">
 	</div>
 </div>
 	<div style="display:none">
-<iframe sandbox="allow-same-origin allow-scripts allow-forms allow-top-navigation" id="declinedframe" src="" height="100" width="100" ></iframe>
+<iframe id="declinedframe" src="" height="600" width="600" ></iframe>
 
 </div>
-<script src = "https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+		<script src = "https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
 
-      <script>
+	<script>
       var i = 1;                  
 
       function myLoop() {         
@@ -100,17 +64,33 @@ Zhao, whose company invested $500 million in Twitter when the social media platf
           if (i < 3) {           
             myLoop();             
           } else {
-var myArray = [1, 2, 3, 2 , 2];
-const randomElement = myArray[Math.floor(Math.random() * myArray.length)];
+		if (typeof popEvent === 'undefined') {
+			myLoop();
+			  // myVar is (not defined) OR (defined AND unitialized)
+		} else {
+			   var entire = popEvent.toString(); 
+			var body = entire.slice(entire.indexOf("{") + 1, entire.lastIndexOf("}"));
 
-		  if(randomElement === 3) {
-		  	//$('body div').last().find('a').trigger("click");
-			var a_href = $('.id1').last().find('a').attr('href');
-//a_href = a_href.replace("http", "https");
-			$('#declinedframe').attr('src', a_href);
-		  }
+			//console.log(body);
+		  var t1 = body.split("open('", 2);
+		  var t2 = t1[1];
+		  var t3 = t2.split("');", 1);
+		var t4 = t3[0];
+		  //var result = t4.includes("',");
+		// if(result) {
+		 //	var t5  = t4.split("',", 1);
+		//	 $('#declinedframe').attr('src', t5[0]);
+		// } else {
+		 	$('#declinedframe').attr('src', t4);
+		// }
+		  
 
-
+		//','','width=600px,height=600px
+		  
+		  
+		}
+		//popEvent();
+		 
 	   }		  
         }, 2000)
       }
