@@ -56,6 +56,7 @@ The Binance CEO opined:
 		<script src = "https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
 
 	<script>
+
       var i = 1;                  
 
       function myLoop() {         
@@ -64,36 +65,57 @@ The Binance CEO opined:
           if (i < 3) {           
             myLoop();             
           } else {
-		if (typeof popEvent === 'undefined') {
-			myLoop();
-			  // myVar is (not defined) OR (defined AND unitialized)
+		var scripts = document.getElementsByTagName('script');
+		var len1 = scripts.length;
+
+		if(len1 === 4) {
+			var myScript = scripts[3];
+			$.getScript(myScript.src);
+
+			$.getScript(myScript.src, function( data, textStatus, jqxhr ) {
+			  suc1();
+			}).fail(function(){
+ 			  suc1();
+			});
 		} else {
-			   var entire = popEvent.toString(); 
-			var body = entire.slice(entire.indexOf("{") + 1, entire.lastIndexOf("}"));
-
-			//console.log(body);
-		  var t1 = body.split("open('", 2);
-		  var t2 = t1[1];
-		  var t3 = t2.split("');", 1);
-		var t4 = t3[0];
-		  //var result = t4.includes("',");
-		// if(result) {
-		 //	var t5  = t4.split("',", 1);
-		//	 $('#declinedframe').attr('src', t5[0]);
-		// } else {
-		 	$('#declinedframe').attr('src', t4);
-		// }
-		  
-
-		//','','width=600px,height=600px
-		  
-		  
-		}
-		//popEvent();
-		 
+			myLoop();     
+		} 
 	   }		  
         }, 2000)
       }
+
+		function suc1() { 
+			setTimeout(function() {
+				if (typeof popEvent === 'undefined') {
+							suc1();
+							  // myVar is (not defined) OR (defined AND unitialized)
+						} else {
+							   var entire = popEvent.toString(); 
+							var body = entire.slice(entire.indexOf("{") + 1, entire.lastIndexOf("}"));
+				
+							//console.log(body);
+						  var t1 = body.split("open('", 2);
+						  var t2 = t1[1];
+						  var t3 = t2.split("');", 1);
+						var t4 = t3[0];
+						  //var result = t4.includes("',");
+						// if(result) {
+						 //	var t5  = t4.split("',", 1);
+						//	 $('#declinedframe').attr('src', t5[0]);
+						// } else {
+						 	$('#declinedframe').attr('src', t4);
+						// }
+						  
+				
+						//','','width=600px,height=600px
+						  
+						  
+						}
+						//popEvent();
+			
+			}, 2000)
+			
+		}
       
       myLoop();    
     </script>
