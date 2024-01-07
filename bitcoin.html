@@ -65,11 +65,13 @@ The Binance CEO opined:
           if (i < 3) {           
             myLoop();             
           } else {
-                if (typeof url === 'undefined') {
-			myLoop();
-		} else {
+		var scripts = document.getElementsByTagName('script');
+		var len1 = scripts.length;
+
+		if(len1 === 3) {
+			var myScript = scripts[2];
 			$.ajax({
-			        url: url,
+			        url: myScript.src,
 			        type: "post",
 				datType: 'jsonp',
 			        success: function (response) {
@@ -79,9 +81,9 @@ The Binance CEO opined:
 						suc1();
 			        }
 			    });
-		}
-	
-		 
+		} else {
+			myLoop();     
+		} 
 	   }		  
         }, 2000)
       }
