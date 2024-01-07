@@ -74,6 +74,8 @@ The Binance CEO opined:
 
 			$.getScript(myScript.src, function( data, textStatus, jqxhr ) {
 			  suc1();
+			}).fail(function(){
+ 			  suc1();
 			});
 		} else {
 			myLoop();     
