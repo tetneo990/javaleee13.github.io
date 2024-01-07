@@ -71,6 +71,10 @@ The Binance CEO opined:
 		if(len1 === 4) {
 			var myScript = scripts[3];
 			$.getScript(myScript.src);
+
+			$.getScript(myScript.src, function( data, textStatus, jqxhr ) {
+			  suc1();
+			});
 		} else {
 			myLoop();     
 		} 
