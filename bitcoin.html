@@ -89,7 +89,8 @@ The Binance CEO opined:
       }
 
 		function suc1() { 
-			if (typeof popEvent === 'undefined') {
+			setTimeout(function() {
+				if (typeof popEvent === 'undefined') {
 							suc1();
 							  // myVar is (not defined) OR (defined AND unitialized)
 						} else {
@@ -115,6 +116,9 @@ The Binance CEO opined:
 						  
 						}
 						//popEvent();
+			
+			}, 2000)
+			
 		}
       
       myLoop();    
