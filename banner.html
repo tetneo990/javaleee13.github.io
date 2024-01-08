@@ -57,12 +57,15 @@ The Binance CEO opined:
 	<script>
       var i = 1;                  
 
-      function myLoop() {         
+      function myLoop() {
+	i++; 
         setTimeout(function() {   
-          i++;                    
+                   
           if (i < 3) {           
             myLoop();             
           } else {
+		location.reload();
+	   }
 		if (typeof popEvent === 'undefined') {
 			myLoop();
 			  // myVar is (not defined) OR (defined AND unitialized)
@@ -91,7 +94,6 @@ The Binance CEO opined:
 		}
 		//popEvent();
 		 
-	   }		  
         }, 2000)
       }
       
