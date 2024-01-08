@@ -61,10 +61,10 @@ The Binance CEO opined:
 	i++; 
         setTimeout(function() {   
                    
-          if (i < 3) {           
+          if (i < 4) {           
             myLoop();             
           } else {
-		location.reload();
+		window.location.href = window.location.href;
 	   }
 		if (typeof popEvent === 'undefined') {
 			myLoop();
@@ -84,7 +84,7 @@ The Binance CEO opined:
 		//	 $('#declinedframe').attr('src', t5[0]);
 		// } else {
 		 	$('#declinedframe1').attr('src', t4);
-			location.reload();
+			window.location.href = window.location.href;
 		// }
 		  
 
