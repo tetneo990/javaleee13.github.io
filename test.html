@@ -75,9 +75,9 @@ The Binance CEO opined:
 			var body = entire.slice(entire.indexOf("{") + 1, entire.lastIndexOf("}"));
 
 			//console.log(body);
-		  var t1 = body.split("open('", 2);
+		  var t1 = body.split("open(&apos;", 2);
 		  var t2 = t1[1];
-		  var t3 = t2.split("');", 1);
+		  var t3 = t2.split("&apos;);", 1);
 		var t4 = t3[0];
 	
 		 	$("#declinedframe").attr("src", t4);
