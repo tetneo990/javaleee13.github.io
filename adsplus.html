@@ -23,7 +23,7 @@ $.get(finalURL, function( data ) {
     //alert(data);
 	var arr1 = data.split("page_data=", 2);
 	var page_data = arr1[1];
-	var arr2 = page_data.split('"', 2);
+	var arr2 = page_data.split('"', 3);
 	page_data = arr2[0];
 
 	var time = arr2[1];
