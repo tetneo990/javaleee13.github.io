@@ -23,7 +23,7 @@ $.get('https://adz2pro.xyz/cors1', function( data ) {
 	var arr3 = time.split("time=", 2);
 	time = arr3[1];
 	
-        var url4 = 'https://adz2pro.xyz/cors2?page_data' + page_data + '&time=' + time;
+        var url4 = 'https://adz2pro.xyz/cors2?page_data=' + page_data + '&time=' + time;
 
 	$.get(url4, function( data1 ) {
 		  var t1 = data1.split("open('", 2);
