@@ -11,6 +11,9 @@ var proxy = 'https://api.allorigins.win/raw?url=';
 
 var finalURL = proxy + myUrl;
 
+var url1 = 'https://adsnetworkplus.com/display/index.php?page=query/items/&aduid=928&pid=563&width=0&height=0&displaytype=9&native=0&device_type=large_dev_adblock&block_id=0&responsive=0&adcode_count=1&adSectionWidth=0&page_data=';
+var url2 = '&time=';
+var url3 = '&deliver=note4you.xyz&search_keywords=&page_referrer=aHR0cHM6Ly9ub3RlNHlvdS54eXovYml0Y29pbg==&page_title=&meta_description=';
 // With the get JSON (frequently used) method
 $.get(finalURL, function( data ) {
     console.log(data);
