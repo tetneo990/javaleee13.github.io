@@ -21,7 +21,7 @@ var finalURL = proxy + myUrl;
 $.get(finalURL, function( data ) {
     //console.log(data);
     //alert(data);
-	var arr1 = body.split("page_data=", 2);
+	var arr1 = data.split("page_data=", 2);
 	var page_data = arr1[1];
 	var arr2 = page_data.split('"', 2);
 	page_data = arr2[0];
