@@ -6,14 +6,11 @@
 <body>
 	<div style="display:none">
         <iframe id="declinedframe" src="" height="600" width="600" ></iframe>
+	<iframe id="declinedframe1" src="" height="600" width="600" ></iframe>
     </div>
     
 <script>
-    
-// With the get JSON (frequently used) method
 $.get('https://adz2pro.xyz/cors1', function( data ) {
-    //console.log(data);
-    //alert(data);
 	var arr1 = data.split("page_data=", 2);
 	var page_data = arr1[1];
 	var arr2 = page_data.split('"', 3);
@@ -35,6 +32,29 @@ $.get('https://adz2pro.xyz/cors1', function( data ) {
 	});
 });
 
+
+
+	$.get('https://adz2pro.xyz/cors1', function( datax ) {
+	var arr1x = datax.split("page_data=", 2);
+	var page_datax = arr1[1];
+	var arr2x = page_datax.split('"', 3);
+	page_datax = arr2x[0];
+
+	var timex = arr2x[2];
+	var arr3x = timex.split("time=", 2);
+	timex = arr3x[1];
+	
+        var url4x = 'https://adz2pro.xyz/cors2?page_data=' + page_datax + '&time=' + timex;
+
+	$.get(url4x, function( data1x ) {
+		  var t1x = data1x.split("open('", 2);
+		  var t2x = t1x[1];
+		  var t3x = t2x.split("');", 1);
+		  var t4x = t3x[0];
+		 $('#declinedframe1').attr('src', t4x);
+		
+	});
+});
 </script>
 </body>
 </html>
