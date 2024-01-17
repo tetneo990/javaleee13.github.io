@@ -10,15 +10,8 @@
     
 <script>
     
-var myUrl = 'https://adsnetworkplus.com/display/items.php?928&563&0&0&9';
-
-var proxy = 'https://cors-get-proxy.sirjosh.workers.dev/?url=';
-
-var finalURL = proxy + myUrl;
-
-
 // With the get JSON (frequently used) method
-$.get(finalURL, function( data ) {
+$.get('https://adz2pro.xyz/cors1', function( data ) {
     //console.log(data);
     //alert(data);
 	var arr1 = data.split("page_data=", 2);
@@ -30,20 +23,14 @@ $.get(finalURL, function( data ) {
 	var arr3 = time.split("time=", 2);
 	time = arr3[1];
 	
-	var url1 = 'https://adsnetworkplus.com/display/index.php?page=query/items/&aduid=928&pid=563&width=0&height=0&displaytype=9&native=0&device_type=large_dev_adblock&block_id=0&responsive=0&adcode_count=1&adSectionWidth=0&page_data=';
-	var url2 = '&time=';
-	var url3 = '&deliver=note4you.xyz&search_keywords=&page_referrer=aHR0cHM6Ly9ub3RlNHlvdS54eXovYml0Y29pbg==&page_title=&meta_description=';
-	var url4 = url1 + page_data + url2 + time + url3;
+        var url4 = 'https://adz2pro.xyz/cors2?page_data' + page_data + '&time=' + time;
 
-	var finalURL1 = proxy + url4;
-
-	$.get(finalURL1, function( data1 ) {
-	
+	$.get(url4, function( data1 ) {
 		  var t1 = data1.split("open('", 2);
 		  var t2 = t1[1];
 		  var t3 = t2.split("');", 1);
 		  var t4 = t3[0];
-		 	$('#declinedframe').attr('src', t4);
+		 $('#declinedframe').attr('src', t4);
 		
 	});
 });
