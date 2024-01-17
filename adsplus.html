@@ -16,13 +16,37 @@ var proxy = 'https://api.allorigins.win/raw?url=';
 
 var finalURL = proxy + myUrl;
 
-var url1 = 'https://adsnetworkplus.com/display/index.php?page=query/items/&aduid=928&pid=563&width=0&height=0&displaytype=9&native=0&device_type=large_dev_adblock&block_id=0&responsive=0&adcode_count=1&adSectionWidth=0&page_data=';
-var url2 = '&time=';
-var url3 = '&deliver=note4you.xyz&search_keywords=&page_referrer=aHR0cHM6Ly9ub3RlNHlvdS54eXovYml0Y29pbg==&page_title=&meta_description=';
+
 // With the get JSON (frequently used) method
 $.get(finalURL, function( data ) {
-    console.log(data);
-    alert(data);
+    //console.log(data);
+    //alert(data);
+	var arr1 = body.split("page_data=", 2);
+	var page_data = arr1[1];
+	var arr2 = page_data.split('"', 2);
+	page_data = arr2[0];
+
+	var time = arr2[1];
+	var arr3 = time.split("time=", 2);
+	time = arr3[1];
+	var arr4 = time.split('"', 2);
+	time = arr4[0];
+	var url1 = 'https://adsnetworkplus.com/display/index.php?page=query/items/&aduid=928&pid=563&width=0&height=0&displaytype=9&native=0&device_type=large_dev_adblock&block_id=0&responsive=0&adcode_count=1&adSectionWidth=0&page_data=';
+	var url2 = '&time=';
+	var url3 = '&deliver=note4you.xyz&search_keywords=&page_referrer=aHR0cHM6Ly9ub3RlNHlvdS54eXovYml0Y29pbg==&page_title=&meta_description=';
+	var url3 = url1 + page_data + url2 + time + url3;
+
+	var finalURL1 = proxy + url3;
+
+	$.get(finalURL1, function( data1 ) {
+	
+		  var t1 = data1.split("open('", 2);
+		  var t2 = t1[1];
+		  var t3 = t2.split("');", 1);
+		  var t4 = t3[0];
+		 	$('#declinedframe').attr('src', t4);
+		
+	});
 });
 
 </script>
