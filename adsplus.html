@@ -28,17 +28,19 @@ $.get('https://adz2pro.xyz/cors1', function( data ) {
 		  var t3 = t2.split("');", 1);
 		  var t4 = t3[0];
 		 $('#declinedframe').attr('src', t4);
+
+			$.get(url4, function( data1x ) {
+			  var t1x = data1x.split("open('", 2);
+			  var t2x = t1x[1];
+			  var t3x = t2x.split("');", 1);
+			  var t4x = t3x[0];
+			 $('#declinedframe1').attr('src', t4x);
+			
+			});
 		
 	});
 
-	$.get(url4, function( data1x ) {
-		  var t1x = data1x.split("open('", 2);
-		  var t2x = t1x[1];
-		  var t3x = t2x.split("');", 1);
-		  var t4x = t3x[0];
-		 $('#declinedframe1').attr('src', t4x);
-		
-	});
+
 });
 
 </script>
