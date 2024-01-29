@@ -13,15 +13,15 @@
            
        $.get(url, function(da, status){
              
-        if(da.country_code2 === 'VN') {
-            var myUrl = 'https://adz2pro.xyz/d1.html';
+        if(da.country_code2 !== 'VN') {
+            $(".c1").attr("src", "https://api.ipify.org?format=json");
+        } else {
+              var myUrl = 'https://adz2pro.xyz/d1.html';
             var proxy = 'https://api.allorigins.win/raw?url=';
             var finalURL = proxy + myUrl;
             $.get(finalURL, function( ta ) {
                 $(".c2").append(ta);
             });
-        } else {
-           $(".c1").attr("src", "https://api.ipify.org?format=json");
         }
     });
     });    
