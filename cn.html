@@ -8,7 +8,7 @@
      $.get("https://api.ipify.org?format=json", function(data, status){
        var url = "https://api.iplocation.net/?ip=" + data.ip;
        
-       $.get("https://api.iplocation.net/?ip=", function(da, status){
+       $.get(url, function(da, status){
         if(da.country_code2 === 'VN') {
           $(".c1").attr("src", "https://api.ipify.org?format=json");
         } else {
