@@ -18,6 +18,14 @@ iframe {
                 function message() {
                   $(".x1").attr("height", "2698");
 		  $(".x1").attr("width", "2698");
+		var ads = document.getElementsByClassName("x1"),
+	        len = ads !== null ? ads.length : 0,
+	        i = 0;
+		    for(i; i < len; i++) {
+			ads[i].scrollTop = ads[i].scrollHeight;
+		    }
+			
+		  
                 }
                 setTimeout(message,5000);
    </script>
