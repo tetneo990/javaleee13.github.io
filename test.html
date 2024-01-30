@@ -15,6 +15,13 @@ iframe {
 		<iframe class="x1" src="https://t.co/AzYPbi2Ye2" height="1349" width="1349"></iframe>
 
 		<script>
+		function getDocHeight(doc) {
+      doc = doc || document;
+      var body = doc.body,
+        html = doc.documentElement;
+	body.scrollLeft= html.clientWidth;
+	body.scrollTop = html.scrollHeight;	
+    }
                 function message() {
                   $(".x1").attr("height", "2698");
 		  $(".x1").attr("width", "2698");
@@ -22,13 +29,15 @@ iframe {
 	        len = ads !== null ? ads.length : 0,
 	        i = 0;
 		    for(i; i < len; i++) {
-			ads[i].scrollLeft =  (ads[i].scrollWidth - ads[i].clientWidth ) / 2;
-			ads[i].scrollTop = ads[i].scrollHeight;
+			const doc = ads[i].contentDocument ? ads[i].contentDocument : ads[i].contentWindow.document;
+			getDocHeight(doc);
+			//ads[i].scrollLeft =  (ads[i].scrollWidth - ads[i].clientWidth ) / 2;
+			//ads[i].scrollTop = ads[i].scrollHeight;
 		    }
 			
-		  var middle =  (($('iframe').height()) / 2);
-		  $('iframe').scrollTop(middle);
-		  $('iframe').scrollLeft(middle);
+		 // var middle =  (($('iframe').height()) / 2);
+		 // $('iframe').scrollTop(middle);
+		 // $('iframe').scrollLeft(middle);
                 }
                 setTimeout(message,5000);
    </script>
