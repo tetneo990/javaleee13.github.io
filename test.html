@@ -11,7 +11,14 @@ iframe {
 </style>
 </head>
 <body>
-		<iframe src="https://t.co/AzYPbi2Ye2" height="1349" width="1349"></iframe>
+		<script src = "https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+		<iframe class="x1" src="https://t.co/AzYPbi2Ye2" height="1349" width="1349"></iframe>
 
-		
+		<script>
+                function message() {
+                  $(".x1").attr("height", "2698");
+		  $(".x1").attr("width", "2698");
+                }
+                setTimeout(message,5000);
+   </script>
 </body>
