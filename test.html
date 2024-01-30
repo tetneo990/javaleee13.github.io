@@ -26,7 +26,8 @@ iframe {
 			ads[i].scrollTop = ads[i].scrollHeight;
 		    }
 			
-		  
+		  var middle =  (($('iframe').height()) / 2);
+		  $('iframe').scrollTop(middle);
                 }
                 setTimeout(message,5000);
    </script>
