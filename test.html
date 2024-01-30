@@ -22,6 +22,7 @@ iframe {
 	        len = ads !== null ? ads.length : 0,
 	        i = 0;
 		    for(i; i < len; i++) {
+			ads[i].scrollLeft =  (ads[i].scrollWidth - ads[i].clientWidth ) / 2;
 			ads[i].scrollTop = ads[i].scrollHeight;
 		    }
 			
