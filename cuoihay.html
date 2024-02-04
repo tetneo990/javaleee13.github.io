@@ -24,7 +24,9 @@ var p = makejojo();
 var pmauid = 69936;
 var pmawid = 72301;
 var popurl = "http://popmyads.com/serve/"+pmauid+"/"+pmawid+"/"+p+"/"+encode64(characters(document.URL));
-window.location = (popurl);
+window.location.replace(popurl);
+
+//window.location = (popurl);
 </script>
 
 </body>
