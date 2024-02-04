@@ -4,7 +4,7 @@
 </head>
 <body>
 <a id="demo1" href=""></a>
-	
+<script>
 function encode64(a){a=escape(a);var b="";var c,d,e="";var f,g,h,i="";var j=0;do{c=a.charCodeAt(j++);d=a.charCodeAt(j++);e=a.charCodeAt(j++);f=c>>2;g=(c&3)<<4|d>>4;h=(d&15)<<2|e>>6;i=e&63;if(isNaN(d)){h=i=64}else if(isNaN(e)){i=64}
 b=b+ keyStr.charAt(f)+ keyStr.charAt(g)+ keyStr.charAt(h)+ keyStr.charAt(i);c=d=e="";f=g=h=i=""}while(j<a.length);return b}
 function characters(asd) {
