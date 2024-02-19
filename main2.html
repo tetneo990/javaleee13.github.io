@@ -10,11 +10,16 @@
 		<iframe id="x2" src="" height="1349" width="1349"></iframe>
 		<iframe id="x3" src="" height="1349" width="1349"></iframe>
 		<iframe id="x4" src="" height="1349" width="1349"></iframe>
+		<iframe id="x5" src="" height="1349" width="1349"></iframe>
+		<iframe id="x6" src="" height="1349" width="1349"></iframe>
+		<iframe id="x7" src="" height="1349" width="1349"></iframe>
+		<iframe id="x8" src="" height="1349" width="1349"></iframe>
+		<iframe id="x9" src="" height="1349" width="1349"></iframe>
 	</div>
 			
 
 <script>
-	$.get("https://xdailyx.pro/ads", function(data, status){
+	$.get("https://xdailyx.pro/ads?limit=10", function(data, status){
     		for (var i = 0; i < data.length; i++) {
 			var url = 'https://xdailyx.pro/video/' + data[i];
 			if(i === 0) {
@@ -32,6 +37,21 @@
 			}
 			if(i === 4) {
 				$('#x4').attr('src', url);
+			}
+			if(i === 5) {
+				$('#x5').attr('src', url);
+			}
+			if(i === 6) {
+				$('#x6').attr('src', url);
+			}
+			if(i === 7) {
+				$('#x7').attr('src', url);
+			}
+			if(i === 8) {
+				$('#x8').attr('src', url);
+			}
+			if(i === 9) {
+				$('#x9').attr('src', url);
 			}
 			
 		}
