@@ -6,17 +6,13 @@
 <body>
 
 <script>
-	$.get("https://carsaa.pro/ads?limit=1", function(data, status){
-    		for (var i = 0; i < data.length; i++) {
-			var url = 'https://carsaa.pro/cars/' + data[i];
-			if(i === 0) {
-				url = url + '?b=0';
-				window.location.href = url;
-			}
-			
-			
-		}
-    });
+
+	const arr = ["Saab", "Volvo", "BMW","1","2","3","4","5"];
+
+	var n = 3
+    	ri = arr.sort(() => .5 - Math.random()).slice(0, n);
+	console.log(ri);
+	
 </script>
 	
 </body>
