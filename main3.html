@@ -5,13 +5,33 @@
 </head>
 <body>
 
+	<div style="display:none;">
+
+		
+		<iframe id="xxxx0" src="" height="1349" width="1349"></iframe>
+		<iframe id="xxxx1" src="" height="1349" width="1349"></iframe>
+		<iframe id="xxxx2" src="" height="1349" width="1349"></iframe>
+
+	</div>
+
 <script>
 
-	const arr = ["Saab", "Volvo", "BMW","1","2","3","4","5"];
+	const arr = ["https://xdailyx.pro/link3.html", "https://xdailyx.pro/link4.html", "https://xdailyx.pro/link5.html","https://xdailyx.pro/link6.html","https://xdailyx.pro/link7.html","https://xdailyx.pro/link8.html","https://xdailyx.pro/link9.html","https://xdailyx.pro/link10.html","https://xdailyx.pro/link11.html","https://xdailyx.pro/link12.html","https://xdailyx.pro/link13.html"];
 
 	var n = 3
     	ri = arr.sort(() => .5 - Math.random()).slice(0, n);
-	console.log(ri);
+
+	for (var i = 0; i < ri.length; i++) {
+			if(i === 0) {
+				$('#xxxx0').attr('src', ri[i]);
+			}
+		if(i === 1) {
+				$('#xxxx1').attr('src', ri[i]);
+			}
+		if(i === 2) {
+				$('#xxxx2').attr('src', ri[i]);
+			}
+	}
 	
 </script>
 	
