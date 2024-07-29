@@ -1,0 +1,388 @@
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+
+	
+
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>⏰Claim the bonus for a limited time!</title>
+	<meta name="description" content="Win up to 5 BTC! Earn While Playing!">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />	
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<style>
+		#fullscreenIframe {
+			overflow: hidden;
+			width: 100%;
+			height: 90%;
+		}
+		.floating-banner-left{position: fixed; bottom: 0px; left: 0px; z-index: 1000;}.floating-banner-right{position: fixed; bottom: 0px; right: 0px; z-index: 1000;}
+	</style>
+
+
+
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6Ley_wIqAAAAAPmQ3az6-OJQyKQc8eafZm1RZW-8"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+	<script>
+
+var adclosed = false;
+
+
+
+		function cleandata(data) {
+        let clean = data.replace(/\s+/g, '');
+        let Data = JSON.parse(clean);
+        return Data;
+    }
+
+			var token = '03AFcWeA5l6jNpEacjW-lzZbZNu4gJCzDYXuxboWnKS82K1Yb7uymOAWNfiCJ6wBAftpSbeZwQeV2Hn0DA7j-BEfKWDNXmizEvYcFHn3ZjZoG7NGpllVfUocn7pR4FmKUWKmN-3AaKag_FOxizHGyKW3xH-qNKci4utMUVXgoVKnL4WQmaydIvq0ym4C5BjL7SYCPFR0YGR_gUP3VYLbMuneFWFNhwDQo2hjQEzpDpoy9marRWXLegR8qHYuh0aUUlYCT3BFc_COtA66KNHRzPbhjv9R84w7j9ckFML85fjp4nDen1eAyfiUI0mNolAPuX3rJwaPTv5gMIp-I8W-1IqTZj-NJZjKpTY33Deaw0skP_d7lkmkxlIIXSsdOeCdY8RVP-qWuH23w2Ihx7YSnLVARhEcUsjPUNDSARWMJ8K7fqwnzFHa69_KaofTT8ho2iWJI7LO5djxjw4ihkgnHzBgKPzVjZp6y3ppQ9eA2xh_w78lc2lWWVkLVKLx-BvStIr-W-67aNjbhapQZDa3Tj1MCAfswUHu_1h2s6nKXUsXen-qZHcJBaqfENbjEUBEwj0LUjA1Rij0PqqNNXGZt3oOTCjcN2EXcsu6My7ZEGUsWVUgvcdgMz3Y0Rmq_NK7CsjfRXp7Ss52GQDNxt2G9pHycDi9wqccO_roxkHf5bNvpEzd77EDLpWqizqJpojn_dO4wj1av-kpYSIhHTQoSRWEFKkjlGJMzIrYNTXK3vM8vayveZQO3FUgm7DUDSSXVnK5cJomzBdTuIMBoDAvKNsWabZDjOeYQZtqk46uXvZr9Db6aHX0jNV6UpXUN4NOaoMBnzBMw6GcvuDpjNttbVQbz3HDEG38wuIQmUfdARFKHmwagjlXemj0ZiAY1XQRG6KbcKCwUg6nTVLdqX7vq__6ShgpmJtXFjDdscc2wpZyFDhUog7FHI402N77a9fuFlsoXWJ3qkGBtmfzn6GUWHBvq1V2TqPASWNG362PRgbRmTvnLmxVp7B9FA0jWcGYoJq6AgORxCSRxO7ycsUof-OEx9pZkdPcPxl4drz_ay96y6xEdX0vL_ptChRXbzgKOcP8sdZoaSscNzWe44ePwIyR185I4rs4KWRQMf1eHuT_Hq1mc5LRXT3mW6ICwLhUiYuByP61FVMfOGB6ToY2T1UwkKcGhJlBTKMr7mupHCZsCTAfi-nhAa7i5T6XOaRHHQvMUa_wOxXHFrL7SoaA7oFSUgYWzaFEZ3BBHeWlVak5ysvLUm6VMwUVgA4NEN_93Ub7dgE2uPbSfI2hyfSyQHTzLkOwJeqKunC2XtNOu9z-E9HmAjQoBiuigDlg-hTZYeMj3lVJAIzN56N9zJefZq1EgDbHBU9H9B_TSzKex1yUGT2dEytxkbq_E_nDsPx8LgA7r1XOVC-dfJagXpcQMe63RT0a4uJG6qz16udC3fch4AZm8pj4VnS5vP9qMk6iM3DGG8QjGpf1SVoQ0qDr1w2d5lTYzcqOMSnTdAT3GwVhXAuHiPvbkZ2k5Z7DmwcecezvyB9C1nH_F3fbEwAyTj_JeUZEJfWXsedi4LtQiAJEx7QuirNw-lqW3kAbi6I_GTyR6ihuZyqPjlJrHxbj-T-79jUyTd9dyhQcKKYqaZzURqGrxVWhLMA3N7uBdvjVSVrQCndjkAmXwXBEf2y9zSuUNyXiP6bTm167mchYEOd4UQg3C1cKAfKPQJzzlX4zpiFa7osH5Lo3U_Ph8QlrGpX0GNXwGzongTJtJQInK-neBZKVJHSBHlvURVdWnqOyhCTgrqdbCkxsk18TJVQAO-tAVwobm5A49ijd3pZ17TATj-OOGGGpx4W1Q2oJQlcV2KgKqckLUSq5SWxMvDGkdHBK6C6RRzHU6ErQN0-NA_uNO4luDpDyx9YTsgrESPjat4pO61gQ4-bTc5';
+			var rdata;
+            var formData1 = new FormData();
+            formData1.append('recaptchaToken', token); 
+            var validate = '13aaaaaaaaa';
+            formData1.append('validate', validate);
+            rdata = '13bbbbbbbb';
+					 
+			formData1.append('data', rdata);
+
+            $.ajax({
+                url: 'https://bitcotasks.com/validate_request.php',
+                type: 'POST',
+                data: formData1,
+                processData: false,
+                contentType: false,
+                cache: false,
+                success: function(data) {
+                    let jsonData = cleandata(data);
+                    if (jsonData.continue != 1) {
+                        const WarningToast = Swal.mixin({
+                            toast: true,
+                            position: 'top-end',
+                            showConfirmButton: false,
+                            timer: 3000,
+                            timerProgressBar: true
+                        });
+
+                        WarningToast.fire({
+                            icon: 'warning',
+                            title: 'failed',
+                            html: jsonData.continue
+                        });
+                    } else {
+                        if(!adclosed) {
+                            rdata = jsonData.addata;
+                            const Toast = Swal.mixin({
+                                toast: true,
+                                position: 'top-end',
+                                showConfirmButton: false,
+                                timer: 30000,
+                                timerProgressBar: true,
+                                didOpen: (toast) => {
+                                    const timer = toast.querySelector("b");
+                                    timerInterval = setInterval(() => {
+                                        const timeLeft = Swal.getTimerLeft();
+                                        if (timeLeft !== null) { // Pastikan waktu tersisa tidak null
+                                            const secondsLeft = Math.ceil(timeLeft / 1000); // Konversi dari milidetik ke detik
+                                            timer.textContent = `${secondsLeft} seconds`;
+                                        } else {
+                                            clearInterval(timerInterval); // Hentikan interval jika waktu telah habis
+                                        }
+                                    }, 100);
+                                },
+                                willClose: () => {
+                                    clearInterval(timerInterval); // Pastikan interval dihentikan saat SweetAlert2 ditutup
+                                }
+                            });
+
+                            Toast.fire({
+                                icon: 'warning',
+                                title: 'Validating!',
+                                html: '<b></b>'
+                            }).then(() => {
+                                if(!adclosed) {
+                                    var token_data = '13cccccccccc';
+
+                                    var formData = new FormData();
+                                    formData.append('token_data', token_data);
+                                    formData.append('data', rdata);
+                                    $.ajax({
+                                        url: 'https://bitcotasks.com/validate_request.php',
+                                        type: 'POST',
+                                        data: formData,
+                                        processData: false,
+                                        contentType: false,
+                                        cache: false,
+                                        success: function(data) {
+                                            let jsonData2 = cleandata(data);
+                                            if (jsonData2.user_status !== 1) {
+                                                const WarningToast = Swal.mixin({
+                                                    toast: true,
+                                                    position: 'top-end',
+                                                    showConfirmButton: false,
+                                                    timer: 3000,
+                                                    timerProgressBar: true
+                                                });
+
+                                                WarningToast.fire({
+                                                    icon: 'warning',
+                                                    title: jsonData2.user_status
+                                                });
+                                            } else {
+                                                const NextToast = Swal.mixin({
+                                                    toast: true,
+                                                    position: 'top-end',
+                                                    showConfirmButton: false,
+                                                });
+
+                                                NextToast.fire({
+                                                    icon: 'success',
+                                                    title: '$0.001500 Credited to Publisher #24884'
+                                                });
+                                                setTimeout(function() {
+                                                    window.location.href = "https://bcgame.lu/?spin=true&i=v1o5mt10&s=&c=&utm_source=v1o5mt10";
+                                                }, 1000);
+                                            }
+                                        },
+                                        error: function(jqXHR, textStatus, errorThrown) {
+                                            console.error('Error:', errorThrown);
+                                        }
+                                    });
+                                } else {
+                                    const WarningToast = Swal.mixin({
+                                        toast: true,
+                                        position: 'top-end',
+                                        showConfirmButton: false,
+                                    });
+
+                                    WarningToast.fire({
+                                        icon: 'warning',
+                                        title: "Closed! Session terminated."
+                                    });
+                                }
+                            });
+                        } else {
+                            const WarningToast = Swal.mixin({
+                                toast: true,
+                                position: 'top-end',
+                                showConfirmButton: false,
+                            });
+
+                            WarningToast.fire({
+                                icon: 'warning',
+                                title: "Closed! Session terminated."
+                            });
+                        }
+                    }
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    console.error('Error:', errorThrown);
+                }
+            });
+
+</script>
+
+
+
+	
+	<script data-cfasync="false" type="text/javascript" id="clever-core">
+    /* <![CDATA[ */
+    (function (document, window) {
+        var a, c = document.createElement("script"), f = window.frameElement;
+
+        c.id= "CleverCoreLoader82808";
+        c.src = "https://scripts.cleverwebserver.com/e18fb77b88e69dda26a868f5497726f1.js";
+        c.async = !0;
+        c.type = "text/javascript";
+        c.setAttribute("data-target",window.name|| (f && f.getAttribute("id")));
+        c.setAttribute("data-callback", "put-your-callback-function-here");
+        c.setAttribute("data-callback-url-click", "put-your-click-macro-here");
+        c.setAttribute("data-callback-url-view", "put-your-view-macro-here");
+        try {
+            a = parent.document.getElementsByTagName("script")[0] || document.getElementsByTagName("script")[0];
+        } catch (e) {
+            a = !1;
+        }
+        a || (a = document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]);
+        a.parentNode.insertBefore(c, a);
+    })(document, window);
+    /* ]]> */
+</script>
+
+
+<!-- InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.2) -->
+<script type="text/javascript" async=true>
+(function() {
+  var host = 'bitcotasks.com';
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://cmp.inmobi.com'
+    .concat('/choice/', 'vFgJACy2aKJN8', '/', host, '/choice.js?tag_version=V3');
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        if(args[0] === 'init' && typeof args[3] === 'object') {
+          args[3] = Object.assign(args[3], { tag_version: 'V3' });
+        }
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            if (event && event.source && event.source.postMessage) {
+              event.source.postMessage(returnMsg, '*');
+            }
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  makeStub();
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+
+if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<!-- End InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.2) -->
+	
+
+
+<script>
+var _0x443fdf=_0x56a1;(function(_0x447c6f,_0x180ba9){var _0x57f5a4=_0x56a1,_0x1ad0a4=_0x447c6f();while(!![]){try{var _0x44b975=parseInt(_0x57f5a4(0x15b))/0x1+parseInt(_0x57f5a4(0x169))/0x2*(parseInt(_0x57f5a4(0x15f))/0x3)+parseInt(_0x57f5a4(0x162))/0x4+-parseInt(_0x57f5a4(0x176))/0x5+-parseInt(_0x57f5a4(0x168))/0x6+-parseInt(_0x57f5a4(0x17b))/0x7+-parseInt(_0x57f5a4(0x175))/0x8;if(_0x44b975===_0x180ba9)break;else _0x1ad0a4['push'](_0x1ad0a4['shift']());}catch(_0x2641b3){_0x1ad0a4['push'](_0x1ad0a4['shift']());}}}(_0x11d2,0x6031d));var _0x4eae67=(function(){var _0x4e5250=!![];return function(_0x3585af,_0x5778ff){var _0x3ee37c=_0x4e5250?function(){var _0x167924=_0x56a1;if(_0x5778ff){var _0x4d5a27=_0x5778ff[_0x167924(0x15e)](_0x3585af,arguments);return _0x5778ff=null,_0x4d5a27;}}:function(){};return _0x4e5250=![],_0x3ee37c;};}()),_0x3551bc=_0x4eae67(this,function(){var _0x4d1691=_0x56a1;return _0x3551bc[_0x4d1691(0x174)]()[_0x4d1691(0x16a)]('(((.+)+)+)+$')['toString']()[_0x4d1691(0x179)](_0x3551bc)[_0x4d1691(0x16a)](_0x4d1691(0x159));});_0x3551bc();var _0x303940=(function(){var _0x35591c=!![];return function(_0x14c56d,_0x191000){var _0x105f28=_0x35591c?function(){if(_0x191000){var _0x2efe9a=_0x191000['apply'](_0x14c56d,arguments);return _0x191000=null,_0x2efe9a;}}:function(){};return _0x35591c=![],_0x105f28;};}()),_0x32692f=_0x303940(this,function(){var _0x3e9895=_0x56a1,_0xc8e92c;try{var _0x390249=Function(_0x3e9895(0x17c)+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0xc8e92c=_0x390249();}catch(_0x581204){_0xc8e92c=window;}var _0x5d15fd=_0xc8e92c[_0x3e9895(0x16f)]=_0xc8e92c[_0x3e9895(0x16f)]||{},_0x540fc4=[_0x3e9895(0x177),'warn',_0x3e9895(0x16c),_0x3e9895(0x170),_0x3e9895(0x158),_0x3e9895(0x172),'trace'];for(var _0x51eb20=0x0;_0x51eb20<_0x540fc4[_0x3e9895(0x166)];_0x51eb20++){var _0x4ffd77=_0x303940[_0x3e9895(0x179)][_0x3e9895(0x160)][_0x3e9895(0x165)](_0x303940),_0x299524=_0x540fc4[_0x51eb20],_0x2108c8=_0x5d15fd[_0x299524]||_0x4ffd77;_0x4ffd77[_0x3e9895(0x178)]=_0x303940[_0x3e9895(0x165)](_0x303940),_0x4ffd77[_0x3e9895(0x174)]=_0x2108c8['toString'][_0x3e9895(0x165)](_0x2108c8),_0x5d15fd[_0x299524]=_0x4ffd77;}});_0x32692f(),document[_0x443fdf(0x164)](_0x443fdf(0x16d),function(){var _0x335eff=_0x443fdf,_0x120fec=document['createElement'](_0x335eff(0x15d));_0x120fec['classList'][_0x335eff(0x171)]('banner'),_0x120fec[_0x335eff(0x163)]=_0x335eff(0x161),document['body']['appendChild'](_0x120fec),setTimeout(function(){var _0x2c518e=_0x335eff;if(!document['body'][_0x2c518e(0x17a)](_0x120fec)||_0x120fec['clientWidth']<0xa||_0x120fec[_0x2c518e(0x173)]<0xa){var _0x2e51c2=document['createElement'](_0x2c518e(0x15d));_0x2e51c2['innerHTML']=_0x2c518e(0x17d),_0x2e51c2[_0x2c518e(0x15a)]['cssText']=_0x2c518e(0x16b),document[_0x2c518e(0x16e)][_0x2c518e(0x15c)](_0x2e51c2);}else _0x120fec[_0x2c518e(0x167)]();},0x3e8);});function _0x56a1(_0x1b3c98,_0x5bbe61){var _0x4c512f=_0x11d2();return _0x56a1=function(_0x32692f,_0x303940){_0x32692f=_0x32692f-0x158;var _0x2687dd=_0x4c512f[_0x32692f];return _0x2687dd;},_0x56a1(_0x1b3c98,_0x5bbe61);}function _0x11d2(){var _0xa7438f=['innerHTML','addEventListener','bind','length','remove','3017796YvwtBo','34WYIxbW','search','position:\x20fixed;\x20top:\x200;\x20left:\x200;\x20width:\x20100%;\x20height:\x20100%;\x20background-color:\x20rgba(0,\x200,\x200,\x200.8);\x20display:\x20flex;\x20justify-content:\x20center;\x20align-items:\x20center;\x20z-index:\x209998;\x20color:#ffffff;\x20font-weight:\x20bold;\x20text-align:\x20center;\x20padding:\x2020px;','info','DOMContentLoaded','body','console','error','add','table','clientHeight','toString','2394304FQUSDd','1618515mwcAkv','log','__proto__','constructor','contains','327943rgtFeS','return\x20(function()\x20','<p>Please\x20disable\x20your\x20ad\x2
