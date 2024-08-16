@@ -1,0 +1,700 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+	details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+	output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup,
+	menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1.5;
+	font-size: 17.5px;
+	font-family: averta_Regular,sans-serif;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: blue;
+}
+
+a:visited {
+	color: blue;
+}
+
+.required:after {
+	content: " *";
+	color: red;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.right {
+	float: left;
+	width: 50%;
+}
+
+.head {
+		background-color: #3296f8;
+		color: #fff;
+}
+
+body {
+	width: 100%;
+}
+
+@media ( min-width : 412px) {
+	body {
+		line-height: 1.5;
+		font-size: 50.5px;
+	}
+	#login input[type=text], #login input[type=password] {
+		height: 75px;
+		line-height: 1.5;
+		width: 100%;
+		border: 1px solid #c7c7c7;
+		font-size: 17.5px;
+	}
+	#login input[type=submit] {
+		height: 75px;
+		line-height: 1.5;
+		font-size: 17.5px;
+		cursor: pointer;
+		width: 50%;
+	}
+	#nav ul li a {
+		line-height: 1.5;
+		font-size: 17.5px;
+	}
+	#content p {
+		line-height: 1.5;
+		margin: 10px 0;
+	}
+	#content .myinfo li {
+		float: left;
+		width: 100%;
+	}
+	#content .myinfo li ul {
+		float: left;
+		width: 100%;
+	}
+	#content .myinfo li ul li {
+		float: left;
+		width: 50%;
+	}
+	#content .myinfo li ul li input[type=text] {
+		height: 45px;
+		line-height: 25px;
+		width: 100%;
+		border: 1px solid #c7c7c7;
+		font-size: 17.5px;
+	}
+	#content .surfer li {
+		float: left;
+		width: 100%;
+	}
+	#content .ptp li ul {
+		float: left;
+		width: 100%;
+	}
+	#content .ptp li ul li {
+		float: left;
+		width: 100%;
+	}
+	#content .ptp li input[type=submit] {
+		width: 50%;
+		height: 25px;
+		line-height: 20px;
+		border: 1px solid #c7c7c7;
+		background: #f5f5f5;
+		text-align: center;
+		color: black;
+		cursor: pointer;
+		font-size: 17.5px;
+	}
+	#content .payment li ul li input[type=submit] {
+		width: 50%;
+		height: 25px;
+		line-height: 20px;
+		border: 1px solid #c7c7c7;
+		background: #f5f5f5;
+		text-align: center;
+		color: black;
+		cursor: pointer;
+		font-size: 17.5px;
+	}
+	#content .payment li ul li {
+		float: left;
+		width: 100%;
+		font-size: 50.5px;
+	}
+	#content .payment li ul li a {
+		padding: 5px;
+		margin-right: 3px;
+		border: 1px solid #c7c7c7;
+	}
+	#content .payment-history {
+		margin-top: 20px;
+	}
+	#content .payment-history li {
+		float: left;
+		width: 100%;
+	}
+	#content .payment-history li ul li {
+		float: left;
+		width: 33%;
+		border-bottom: 1px solid #c7c7c7;
+	}
+	#content .home li ul {
+		border: 1px solid #c7c7c7;
+		margin: 10px;
+		padding: 10px;
+	}
+	#content .home li ul li.heading {
+		background-color: #3296f8;
+		color: #fff;
+	}
+	.link {
+		width: 100%;
+		font-size: 30.5px;
+	}
+}
+
+@media ( min-width : 575.98px) {
+	body {
+		line-height: 1.5;
+		font-size: 50.5px;
+	}
+	#login input[type=text], #login input[type=password] {
+		height: 75px;
+		line-height: 1.5;
+		width: 100%;
+		border: 1px solid #c7c7c7;
+		font-size: 50.5px;
+	}
+	#login input[type=submit] {
+		height: 75px;
+		line-height: 1.5;
+		border: 2px solid #c7c7c7;
+		font-size: 50.5px;
+	}
+	#nav ul li a {
+		line-height: 1.5;
+		font-size: 50.5px;
+	}
+	#content p {
+		line-height: 1.5;
+		margin: 10px 0;
+	}
+	#content .myinfo li {
+		float: left;
+		width: 100%;
+	}
+	#content .myinfo li ul {
+		float: left;
+		width: 100%;
+	}
+	#content .myinfo li ul li {
+		float: left;
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	#content .myinfo li ul li input[type=text] {
+		height: 75px;
+		line-height: 45px;
+		width: 100%;
+		border: 1px solid #c7c7c7;
+		font-size: 50.5px;
+	}
+	#content .myinfo li ul li select {
+		width: 50%;
+		height: 75px;
+		line-height: 45px;
+		border: 1px solid #c7c7c7;
+		text-align: center;
+		color: black;
+		cursor: pointer;
+		font-size: 50.5px;
+	}
+	#content .myinfo li ul li select option{
+		width: 100%;
+		font-size: 12.5px;
+	}
+	#content .myinfo li ul li input[type=submit] {
+		width: 50%;
+		height: 75px;
+		line-height: 45px;
+		border: 1px solid #c7c7c7;
+		background: #f5f5f5;
+		text-align: center;
+		color: black;
+		cursor: pointer;
+		font-size: 50.5px;
+	}
+
+	#content .myinfo li ul li input[type=button] {
+		width: 50%;
+		height: 75px;
+		line-height: 45px;
+		border: 1px solid #c7c7c7;
+		background: #f5f5f5;
+		text-align: center;
+		color: black;
+		cursor: pointer;
+		font-size: 50.5px;
+	}
+	#content .surfer li {
+		float: left;
+		width: 100%;
+	}
+	#content .ptp li ul {
+		float: left;
+		width: 100%;
+	}
+	#content .ptp li ul li {
+		float: left;
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	#content .payment-history {
+		margin-top: 20px;
+	}
+	#content .payment li ul li input[type=submit] {
+		width: 50%;
+		height: 75px;
+		line-height: 20px;
+		border: 1px solid #c7c7c7;
+		background: #f5f5f5;
+		text-align: center;
+		color: black;
+		cursor: pointer;
+		font-size: 50.5px;
+	}
+	#content .payment li ul li {
+		float: left;
+		width: 100%;
+		font-size: 50.5px;
+		margin-bottom: 5px;
+	}
+	#content .payment li ul li a {
+		padding: 5px;
+		margin-right: 3px;
+		border: 1px solid #c7c7c7;
+		font-size: 50.5px;
+	}
+	#content .payment-history li {
+		float: left;
+		width: 100%;
+	}
+	#content .payment-history li ul li {
+		float: left;
+		width: 33%;
+		border-bottom: 1px solid #c7c7c7;
+	}
+	#content .home li ul {
+		border: 1px solid #c7c7c7;
+		margin: 10px;
+		padding: 10px;
+	}
+	#content .home li ul li.heading {
+		background-color: #3296f8;
+		color: #fff;
+	}
+	.link {
+		width: 100%;
+		font-size: 30.5px;
+	}
+}
+
+@media ( min-width : 1200px) {
+	body {
+		line-height: 1.5;
+		font-size: 17.5px;
+	}
+	#header {
+		width: 1100px;
+		margin: 0 auto;
+		padding: 10px 10px;
+	}
+	#top-header {
+		width: 1100px;
+		margin: 0 auto;
+	}
+	#nav {
+		width: 1100px;
+		margin: 0 auto;
+		padding-top: 30px;
+		border-bottom: 1px solid #d9d9d9;
+	}
+	#nav-content {
+		width: 1100px;
+		margin: 0 auto;
+	}
+	#page-body {
+		width: 1100px;
+		margin: 0 auto;
+		padding: 0 10px;
+		padding-top: 20px;
+	}
+	#footer {
+		width: 1100px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#nav-bottom-content {
+		width: 1100px;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+	#login input[type=text], #login input[type=password] {
+		height: 45px;
+		line-height: 25px;
+		width: 100%;
+		border: 1px solid #c7c7c7;
+		font-size: 17.5px;
+	}
+	#login input[type=submit] {
+		height: 45px;
+		line-height: 25px;
+		font-size: 17.5px;
+	}
+	#nav ul li a {
+		line-height: 1.5;
+		font-size: 17.5px;
+	}
+	#content .myinfo li {
+		float: left;
+		width: 50%;
+	}
+	#content .myinfo li ul li {
+		float: left;
+		width: 50%;
+	}
+	#content .myinfo li.pay{
+		float: left;
+		width: 100%;
+	}
+	#content .myinfo li.pay ul li {
+		float: left;
+		width: 100%;
+	}
+	#content .myinfo li ul li input[type=text] {
+		height: 20px;
+		line-height: 20px;
+		width: 100%;
+		border: 1px solid #c7c7c7;
+		font-size: 17.5px;
+	}
+	#content .myinfo li ul li select {
+		width: 50%;
+		height: 25px;
+		line-height: 20px;
+		border: 1px solid #c7c7c7;
+		background: #f5f5f5;
+		text-align: center;
+		color: black;
+		cursor: pointer;
+		font-size: 17.5px;
+	}
+	#content .myinfo li ul li input[type=submit] {
+		width: 50%;
+		height: 25px;
+		line-height: 20px;
+		border: 1px solid #c7c7c7;
+		background: #f5f5f5;
+		text-align: center;
+		color: black;
+		cursor: pointer;
+		font-size: 17.5px;
+	}
+	#content .myinfo li ul li input[type=button] {
+		width: 50%;
+		height: 25px;
+		line-height: 20px;
+		border: 1px solid #c7c7c7;
+		background: #f5f5f5;
+		text-align: center;
+		color: black;
+		cursor: pointer;
+		font-size: 17.5px;
+	}
+	#content .surfer li {
+		float: left;
+		width: 100%;
+	}
+	#content .ptp li ul {
+	}
+	#content .ptp li ul li {
+		float: left;
+		width: 50%;
+	}
+	#content .payment-history {
+		margin-top: 20px;
+	}
+	#content .payment li ul li input[type=submit] {
+		width: 50%;
+		height: 25px;
+		line-height: 20px;
+		border: 1px solid #c7c7c7;
+		background: #f5f5f5;
+		text-align: center;
+		color: black;
+		cursor: pointer;
+		font-size: 17.5px;
+	}
+	#content .payment li {
+		float: left;
+		width: 100%;
+	}
+	#content .payment li ul li {
+		float: left;
+		width: 50%;
+		font-size: 17.5px;
+	}
+	#content .payment li ul li a {
+		padding: 3px 5px;
+		margin-right: 3px;
+		border: 1px solid #c7c7c7;
+		font-size: 17.5px;
+	}
+	#content .payment-history li {
+		float: left;
+		width: 100%;
+	}
+	#content .payment-history li ul li {
+		float: left;
+		width: 33%;
+		border-bottom: 1px solid #c7c7c7;
+	}
+	#content .home {
+		margin: 0 auto;
+		width: 70%;
+		text-align: center;
+	}
+	#content .home li {
+		float: left;
+		width: 50%;
+	}
+	#content .home li ul {
+		border: 1px solid #c7c7c7;
+		margin: 10px;
+		padding: 10px;
+	}
+	#content .home li ul li {
+		float: left;
+		width: 100%;
+	}
+	#content .home li ul li.heading {
+		background-color: #3296f8;
+		color: #fff;
+	}
+	.link {
+		width: 100%;
+		font-size: 17.5px;
+	}
+}
+
+ul.paid li {
+	float: left;
+}
+
+ul.paid .paid-l {
+	width: 17%;
+	margin: 1%;
+}
+
+ul.paid .paid-m {
+	width: 60%
+}
+
+ul.paid .paid-r {
+	width: 17%;
+	margin: 1%;
+}
+
+#header {
+	margin: 0 auto;
+	padding: 10px 10px;
+}
+
+#top-header {
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+#top-left {
+	width: 50%;
+	float: left;
+}
+
+#top-left  span {
+	padding-right: 20px;
+}
+
+#top-right {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+#top-right span {
+	padding-left: 20px;
+}
+
+#nav {
+	margin: 0 auto;
+	padding-top: 30px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+#nav-content {
+	margin: 0 auto;
+}
+
+#nav ul li {
+	float: left;
+	padding: 20px 20px 20px 0;
+}
+
+#nav ul {
+	float: left;
+	text-align: right;
+}
+
+#page-body {
+	margin: 0 auto;
+	padding: 0 10px;
+	padding-top: 20px;
+}
+
+#content {
+	width: 100%;
+}
+
+.breadcrumb {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.breadcrumb li {
+
+}
+
+.page {
+	padding: 10px 0;
+}
+
+.page .total {
+	float: left;
+	width: 40%;
+	padding: 5px 0;
+}
+
+.page .sort {
+	float: right;
+	width: 20%;
+}
+
+.page ul {
+	float: left;
+}
+
+.page ul li {
+	float: left;
+	padding: 5px;
+}
+
+#content p {
+	line-height: 1.5;
+	margin: 5px 0;
+}
+
+.link {
+	width: 100%;
+}
+
+.pre-line {
+	color: red;
+	white-space: pre-line;
+}
+
+#validateStatus {
+	color: red;
+	white-space: pre-line;
+}
+
+.disabled {
+	display: none;
+}
+
+.pactive {
+	background: #005cc6;
+}
+
+.pactive a {
+	color: white;
+}
+
+#footer {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#nav-bottom {
+	width: 100%;
+	margin: 20px 0;
+}
+
+#nav-bottom-content {
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+#nav-bottom ul li {
+	display: inline;
+	padding: 20px 20px 20px 0;
+}
+
+#nav-bottom ul {
+	text-align: center;
+}
+
+.copy {
+	margin: 10px 0;
+}
