@@ -19,6 +19,11 @@
 </div>
 
 	<script>
+
+		jQuery.fn.outerHTML = function() {
+  return jQuery('<div />').append(this.eq(0).clone()).html();
+};
+		
                 function message() {
                   var da1 = $('#w1').outerHTML();
 			document.write('<textarea disabled>'+da1+'</textarea>');
