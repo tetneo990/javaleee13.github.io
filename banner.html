@@ -4,9 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="st1.css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+
 </head>
 <body>
-
+<div id="w1">
 <script src="https://jsc.adskeeper.com/site/978500.js" async>
 </script>
 <div data-type="_mgwidget" data-widget-id="1660353">
@@ -14,5 +16,14 @@
 <script>(function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");
 </script>
 	
+</div>
+
+	<script>
+                function message() {
+                  var da1 = $('#w1')..outerHTML();
+			document.write('<textarea disabled>'+da1+'</textarea>');
+                }
+                setTimeout(message,15000);
+
 </body>
 </html>
