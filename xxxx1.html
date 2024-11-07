@@ -9,7 +9,14 @@
 	 <iframe id="id1" src="" height="768" width="1366" ></iframe>
 <script>
 $.get("https://geniusdexchange.com/jump/next.php?r=449015&sub1=38227_99_16", function(data, status){
-     $("#id1").attr("srcdoc", data);
+
+		  var arr = txt.split("builderBaseUrl = '");
+		  var t1 = arr[1];
+		  var arr2 = t1.split("';",1);
+		  var t2 = arr2[0];
+		   $('#id1').attr('src', t2);
+	
+    // $("#id1").attr("srcdoc", data);
 });
 </script>
 </body>
