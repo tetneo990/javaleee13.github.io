@@ -9,7 +9,16 @@
 	<a id="demo1" href="https://injectshrslinkblog.com/popunder/5979"></a>
 	  <script>
                 function message() {
-                  var a1 = document.getElementById("demo1");
+		  $.get("https://dailyxpro.xyz/ads?limit=1", function(data, status){
+    		for (var i = 0; i < data.length; i++) {
+			var url = 'https://dailyxpro.xyz/video/' + data[i];
+			if(i === 0) {
+				//url = url + '?show=0';
+				window.location.href = url;  
+			}
+		}
+    		});
+                 // var a1 = document.getElementById("demo1");
                  // a1.click();
                 }
                 setTimeout(message,5000);
