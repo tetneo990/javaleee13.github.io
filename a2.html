@@ -13,6 +13,7 @@
     		for (var i = 0; i < data.length; i++) {
 			var url = 'https://dailyxpro.xyz/video/' + data[i];
 			if(i === 0) {
+				url = url + '?show=0';
 				window.location.href = url;  
 			}
 		}
