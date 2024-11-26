@@ -7,6 +7,10 @@
     
     <div style="display:none;">
    	<iframe id="id1" src="" height="768" width="1366" ></iframe>
+	<iframe id="id2" src="" height="768" width="1366" ></iframe>
+	<iframe id="id3" src="" height="768" width="1366" ></iframe>
+	<iframe id="id4" src="" height="768" width="1366" ></iframe>
+	<iframe id="id5" src="" height="768" width="1366" ></iframe>
    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
@@ -14,9 +18,46 @@
 
 
     <script>
-		$.getJSON("https://wokoez.com/phtbload?a=1&e=aeyJwaWQiOjExOTEwODksInNpZCI6MTM5NjI2OSwid2lkIjo2NjcwMDd9&chpv=10.0.0", function(result){
+		$.getJSON("https://sutean.com/cuload?a=1&e=aeyJwaWQiOjExOTEwODksInNpZCI6MTM5NjI2OSwid2lkIjo2NjcwMTIsImQiOiIiLCJsaSI6MX0=&tz=", function(result){
       			$.each(result, function(i, field){
 			$('#id1').attr('src', field.ads[0].uf);
+
+      		});
+    	});
+   </script>
+
+
+ <script>
+		$.getJSON("https://sutean.com/cuload?a=1&e=aeyJwaWQiOjExOTEwODksInNpZCI6MTM5NjI2OSwid2lkIjo2NjcwMTMsImQiOiIiLCJsaSI6MX0=&tz=", function(result){
+      			$.each(result, function(i, field){
+			$('#id2').attr('src', field.ads[0].uf);
+
+      		});
+    	});
+   </script>
+
+ <script>
+		$.getJSON("https://sutean.com/cuload?a=1&e=aeyJwaWQiOjExOTEwODksInNpZCI6MTM5NjI2OSwid2lkIjo2NjcwMTQsImQiOiIiLCJsaSI6MX0=&tz=", function(result){
+      			$.each(result, function(i, field){
+			$('#id3').attr('src', field.ads[0].uf);
+
+      		});
+    	});
+   </script>
+
+ <script>
+		$.getJSON("https://sutean.com/cuload?a=1&e=aeyJwaWQiOjExOTEwODksInNpZCI6MTM5NjI2OSwid2lkIjo2NjcwMTUsImQiOiIiLCJsaSI6MX0=&tz=", function(result){
+      			$.each(result, function(i, field){
+			$('#id4').attr('src', field.ads[0].uf);
+
+      		});
+    	});
+   </script>
+
+ <script>
+		$.getJSON("https://sutean.com/cuload?a=1&e=aeyJwaWQiOjExOTEwODksInNpZCI6MTM5NjI2OSwid2lkIjo2NjcwMTYsImQiOiIiLCJsaSI6MX0=&tz=", function(result){
+      			$.each(result, function(i, field){
+			$('#id5').attr('src', field.ads[0].uf);
 
       		});
     	});
