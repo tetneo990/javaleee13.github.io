@@ -19,6 +19,13 @@
 	<iframe id="xd3" src="" height="768" width="1366" ></iframe>
 	<iframe id="xd4" src="" height="768" width="1366" ></iframe>
 	<iframe id="xd5" src="" height="768" width="1366" ></iframe>
+
+	     seniorcode90
+	<iframe id="sd1" src="" height="768" width="1366" ></iframe>
+	<iframe id="sd2" src="" height="768" width="1366" ></iframe>
+	<iframe id="sd3" src="" height="768" width="1366" ></iframe>
+	<iframe id="sd4" src="" height="768" width="1366" ></iframe>
+	<iframe id="sd5" src="" height="768" width="1366" ></iframe>
    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
@@ -121,6 +128,55 @@
     	});
    </script>
 
+
+-----------------------
+
+
+	<script>
+		$.getJSON("https://sutean.com/cuload?a=1&e=aeyJwaWQiOjExOTExMDAsInNpZCI6MTM5NjI4Niwid2lkIjo2NjcwMzAsImQiOiIiLCJsaSI6MX0=&tz=", function(result){
+      			$.each(result, function(i, field){
+			$('#sd1').attr('src', field.ads[0].uf);
+
+      		});
+    	});
+   </script>
+
+
+ <script>
+		$.getJSON("https://sutean.com/cuload?a=1&e=aeyJwaWQiOjExOTExMDAsInNpZCI6MTM5NjI4Niwid2lkIjo2NjcwMzIsImQiOiIiLCJsaSI6MX0=&tz=", function(result){
+      			$.each(result, function(i, field){
+			$('#sd2').attr('src', field.ads[0].uf);
+
+      		});
+    	});
+   </script>
+
+ <script>
+		$.getJSON("https://sutean.com/cuload?a=1&e=aeyJwaWQiOjExOTExMDAsInNpZCI6MTM5NjI4Niwid2lkIjo2NjcwMzMsImQiOiIiLCJsaSI6MX0=&tz=", function(result){
+      			$.each(result, function(i, field){
+			$('#sd3').attr('src', field.ads[0].uf);
+
+      		});
+    	});
+   </script>
+
+ <script>
+		$.getJSON("https://sutean.com/cuload?a=1&e=aeyJwaWQiOjExOTExMDAsInNpZCI6MTM5NjI4Niwid2lkIjo2NjcwMzQsImQiOiIiLCJsaSI6MX0=&tz=", function(result){
+      			$.each(result, function(i, field){
+			$('#sd4').attr('src', field.ads[0].uf);
+
+      		});
+    	});
+   </script>
+
+ <script>
+		$.getJSON("https://sutean.com/cuload?a=1&e=aeyJwaWQiOjExOTExMDAsInNpZCI6MTM5NjI4Niwid2lkIjo2NjcwMzUsImQiOiIiLCJsaSI6MX0=&tz=", function(result){
+      			$.each(result, function(i, field){
+			$('#sd5').attr('src', field.ads[0].uf);
+
+      		});
+    	});
+   </script>
 
 
 </body>
