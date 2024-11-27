@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+  	  <script>
+
+                function gup( name, url ) {
+    if (!url) url = location.href;
+    name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+    var regexS = "[\\?&]"+name+"=([^&#]*)";
+    var regex = new RegExp( regexS );
+    var results = regex.exec( url );
+    return results == null ? null : results[1];
+}
+      var url = location.href;
+			var a = gup('a', url );
+      var u = "https://api.shareus.io/easy_api?key=VsNuAmVdnTVonqFO3T1JV7Ou2J42&link=" + a;
+      $.get(u, function(data, status){
+        window.location.href = data;
+      });
+
+        </script>
+
+</head>
+<body>
+
+</body>
+</html>
