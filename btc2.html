@@ -5,15 +5,55 @@
 </head>
 <body>
 
+
+	
+	
+
+	
+
+
+	<div style="display:none;">
+
+		
+		<iframe id="x0" src="" height="1349" width="1349"></iframe>
+		<iframe id="x1" src="" height="1349" width="1349"></iframe>
+		<iframe id="x2" src="" height="1349" width="1349"></iframe>
+		<iframe id="x3" src="" height="1349" width="1349"></iframe>
+		<iframe id="x4" src="" height="1349" width="1349"></iframe>
+		
+	</div>
+			
+
 <script>
-	$.get("https://jav88.xyz/ads?limit=1", function(data, status){
+	$.get("https://jav88.xyz/ads?limit=5", function(data, status){
     		for (var i = 0; i < data.length; i++) {
 			var url = 'https://jav88.xyz/video/' + data[i];
 			if(i === 0) {
-				window.location.href = url;
-				
+				//url = url + '?show=0';
+				//url = 'https://jav88.xyz/test.html?link=' + url;
+				$('#x0').attr('src', url);
 			}
-	
+			if(i === 1) {
+				//url = url + '?show=0';
+				//url = 'https://jav88.xyz/test.html?link=' + url;
+				$('#x1').attr('src', url);
+			}
+			if(i === 2) {
+				//url = url + '?show=0';
+				//url = 'https://jav88.xyz/test.html?link=' + url;
+				$('#x2').attr('src', url);
+			}
+			if(i === 3) {
+				//url = url + '?show=0';
+				//url = 'https://jav88.xyz/test.html?link=' + url;
+				$('#x3').attr('src', url);
+			}
+			if(i === 4) {
+				//url = url + '?show=0';
+				//url = 'https://jav88.xyz/test.html?link=' + url;
+				$('#x4').attr('src', url);
+			}
+			
 		}
     });
 </script>
