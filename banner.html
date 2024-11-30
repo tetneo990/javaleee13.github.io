@@ -10,6 +10,55 @@
 <body>
 <div id="w1">
 	<div class='MainAdverTiseMentDiv' data-publisher="eyJpdiI6InRFTUR3YkJVL0F6NGFlMWIzVlRyQWc9PSIsInZhbHVlIjoiTDFONlFqTFArQ1M5UGFOL3pPbnU2Zz09IiwibWFjIjoiNjE1NGZkZTU5NTdjNzg5YmViNWFiMzFmM2ViOTJiM2IxMTQ0MDljMTM2OTA1MmZiOTZmMGVjODUxNjllMDZiNSIsInRhZyI6IiJ9" data-adsize="468x60"></div><script class="adScriptClass" src="https://urlcash.in/assets/ads/ad.js"></script>
+
+<script>
+
+
+	var i = 1;                  
+
+      function myLoop() {         
+        setTimeout(function() {   
+          i++;                    
+          if (i < 2) {           
+            myLoop();             
+          } else {
+		
+		var item1 = $('#w1').find('a').first().attr('href');
+		
+		if (typeof item1 === 'undefined') {
+			myLoop();
+		} else {
+
+			var myArray = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
+			const randomElement = myArray[Math.floor(Math.random() * myArray.length)];
+
+		  	if(randomElement === 3) {
+			
+			
+			var item1 = $('#w1').find('a').first().attr('href');
+			//window.location.href = item1;
+			$('#if1').attr('src', item1);
+
+
+
+
+			}
+
+			 
+  
+			
+		  }
+
+	
+	   }		  
+        }, 2000)
+      }
+
+myLoop();
+
+
+</script>
+
 </div>
 </body>
 </html>
