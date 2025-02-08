@@ -8,8 +8,26 @@
 	<div style="display:none;">
 		
 	<iframe id="id1" src="" height="768" width="1366" ></iframe>
+	
+	<iframe id="id2" src="" height="768" width="1366" ></iframe>
+	
+	
 		
 		
+	  <script>
+		function makeid(length) {
+    let result = '';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const charactersLength = characters.length;
+    let counter = 0;
+    while (counter < length) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      counter += 1;
+    }
+    return result;
+}
+		document.getElementById('id1').src = 'https://epicshow.net/show/?id=0&uid=35196&source_id=11485993&limit=1&sub1=&sub2=&sub3=&sub4=&subdate=0&landing_id=0&traffic_type=3' + '&' + makeid(5) + '=' + makeid(5);
+  		document.getElementById('id2').src = 'https://epicshow.net/show/?id=0&uid=35196&source_id=11485993&limit=1&sub1=&sub2=&sub3=&sub4=&subdate=0&landing_id=0&traffic_type=3' + '&' + makeid(5) + '=' + makeid(5);
 
 		
 		
