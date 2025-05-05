@@ -33,9 +33,43 @@
     }
     return result;
 }
-		document.getElementById('id1').src = 'https://epicshow.net/show/?id=0&uid=34880&source_id=11485854&limit=1&sub1=&sub2=&sub3=&sub4=&subdate=0&landing_id=0&traffic_type=3' + '&' + makeid(5) + '=' + makeid(5);
-  		document.getElementById('id2').src = 'https://epicshow.net/show/?id=0&uid=34880&source_id=11485854&limit=1&sub1=&sub2=&sub3=&sub4=&subdate=0&landing_id=0&traffic_type=3' + '&' + makeid(5) + '=' + makeid(5);
 
+function isInIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+}
+
+
+
+if (isInIframe()) {
+	 $.getJSON("https://epicshow.net/show/?id=0&uid=35758&source_id=11486588&limit=1&sub1=&sub2=&sub3=&sub4=&subdate=0&landing_id=0", function(result){
+  
+
+		 document.getElementById('id1').src = result[0].link;
+
+		 document.getElementById('id1').src = result[1].link;
+     
+    });
+
+                
+		
+
+
+
+
+
+	
+
+} else {
+	window.location.href = "https://www.google.com";
+}
+
+
+
+		  
 		
 
 
