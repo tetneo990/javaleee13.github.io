@@ -11,6 +11,9 @@
 		
 		<iframe id="id1" src="" height="768" width="1366" ></iframe>
 		<iframe id="id2" src="" height="768" width="1366" ></iframe>
+
+		<iframe id="id3" src="" height="768" width="1366" ></iframe>
+		<iframe id="id4" src="" height="768" width="1366" ></iframe>
 	
 		
 		
@@ -51,6 +54,17 @@ if (isInIframe()) {
 		 document.getElementById('id1').src = result[0].link;
 
 		 document.getElementById('id2').src = result[1].link;
+     
+    });
+
+
+
+	 $.getJSON("https://epicshow.net/show/?id=0&uid=36151&source_id=11486593&limit=1&sub1=&sub2=&sub3=&sub4=&subdate=0&landing_id=0", function(result){
+  
+
+		 document.getElementById('id3').src = result[0].link;
+
+		 document.getElementById('id4').src = result[1].link;
      
     });
 
