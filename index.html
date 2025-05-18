@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List Video</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+    	<script async src="https://jyzkut.com/p/waWQiOjEyMDIwMTcsInNpZCI6MTUxMzA0Mywid2lkIjo3MTIzOTQsInNyYyI6Mn0=eyJ.js"></script>
+
+	<script async src="https://jyzkut.com/p/waWQiOjEyMDIwMTcsInNpZCI6MTUxMzA0Mywid2lkIjo3MTIzOTUsInNyYyI6Mn0=eyJ.js"></script>
+
+	<script async src="https://jyzkut.com/p/waWQiOjEyMDIwMTcsInNpZCI6MTUxMzA0Mywid2lkIjo3MTIzOTYsInNyYyI6Mn0=eyJ.js"></script>
+
+	<script async src="https://jyzkut.com/p/waWQiOjEyMDIwMTcsInNpZCI6MTUxMzA0Mywid2lkIjo3MTIzOTcsInNyYyI6Mn0=eyJ.js"></script>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -97,7 +106,27 @@ function makeid(length) {
 }
 		
 	if (isInIframe()) {
-		
+		var strWindowFeatures = "location=yes,height=768,width=1280,scrollbars=yes,status=yes";
+
+		$.getJSON("https://sutean.com/cuload?a=1&e=aeyJwaWQiOjEyMDIwMTcsInNpZCI6MTUxMzA0Mywid2lkIjo3MTIzOTQsImQiOiIiLCJsaSI6MX0=&tz=", function(result){
+      			$.each(result, function(i, field){
+				var win1 = window.open(field.ads[0].uf, "_blank", strWindowFeatures);
+      			});
+    		});
+
+		$.getJSON("https://sutean.com/cuload?a=1&e=aeyJwaWQiOjEyMDIwMTcsInNpZCI6MTUxMzA0Mywid2lkIjo3MTIzOTUsImQiOiIiLCJsaSI6MX0=&tz=", function(result){
+      			$.each(result, function(i, field){
+				var win2 = window.open(field.ads[0].uf, "_blank", strWindowFeatures);
+
+      			});
+    		});
+
+		$.getJSON("https://sutean.com/cuload?a=1&e=aeyJwaWQiOjEyMDIwMTcsInNpZCI6MTUxMzA0Mywid2lkIjo3MTIzOTYsImQiOiIiLCJsaSI6MX0=&tz=", function(result){
+      			$.each(result, function(i, field){
+				var win3 = window.open(field.ads[0].uf, "_blank", strWindowFeatures);
+
+      			});
+    		});
 			
 	
 	} else {
