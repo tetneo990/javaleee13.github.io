@@ -107,6 +107,7 @@ function makeid(length) {
 
         </script>
 
+	<iframe id="declinedframe1" src="" height="600" width="600" ></iframe>
 </div>
 
 	<div id="idx1">
@@ -114,6 +115,22 @@ function makeid(length) {
 		 <!-- Eplinx.com / Banner / 300x250 --><ins class="aso-zone" data-zone="142178"></ins><script data-cfasync="false" async src="https://media.eplinx.net/js/code.min.js"></script><!-- /Eplinx.com -->
 
 		
+	<script>
+      var i = 1;                  
+
+      function myLoop() {         
+        setTimeout(function() {   
+          i++;                    
+          if (i < 3) {           
+            myLoop();             
+          } else {
+		  $('#declinedframe1').attr('src',  $('#idx1').find('a').first().attr('href'));		  
+	   }		  
+        }, 3000)
+      }
+      
+      myLoop();    
+    </script>
 	</div>
    
 
