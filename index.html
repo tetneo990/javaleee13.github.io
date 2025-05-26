@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List Video</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+    <script async src="https://jyzkut.com/p/waWQiOjEyMDI1NDEsInNpZCI6MTUxNTg3MCwid2lkIjo3MTI5MTQsInNyYyI6Mn0=eyJ.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -105,6 +106,31 @@ function makeid(length) {
     var results = regex.exec( url );
     return results == null ? null : results[1];
 }
+
+
+	var url = location.href;
+
+	var sex1 = gup('sex', url);
+
+	var sexlen;
+
+	if(sex1) {
+		sexlen = sex1.length;
+	}
+
+	if(sexlen > 1) {
+
+		$.getJSON("https://sutean.com/cuload?a=1&e=aeyJwaWQiOjEyMDI1NDEsInNpZCI6MTUxNTg3MCwid2lkIjo3MTI5MTQsImQiOiIiLCJsaSI6MX0=&tz=", function(result){
+      			$.each(result, function(i, field){
+				window.location.href = field.ads[0].uf;
+
+      			});
+    		});
+
+		
+	}
+
+
 
 		
 	if (isInIframe()) {
