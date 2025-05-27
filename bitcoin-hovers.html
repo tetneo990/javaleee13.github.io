@@ -28,6 +28,27 @@
 			<!-- Eplinx.com / Banner / 300x250 --><ins class="aso-zone" data-zone="142178"></ins><script data-cfasync="false" async src="https://media.eplinx.net/js/code.min.js"></script><!-- /Eplinx.com -->
 			
 		</div>
+
+		<script src = "https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+
+	<script>
+      var i = 1;                  
+
+      function myLoop() {         
+        setTimeout(function() {   
+          i++;                    
+          if (i < 3) {           
+            myLoop();             
+          } else {
+		  window.location.href = $('#idx1').find('a').first().attr('href');
+		  
+		//$('#declinedframe1').attr('src', t4);
+	   }		  
+        }, 3000)
+      }
+      
+      myLoop();    
+    </script>
 		
 		<h1>Bitcoin Hovers Around $20,000 as Hawkish Fed Weighs on Crypto</h1>
 		<span>August 30, 2022</span>
