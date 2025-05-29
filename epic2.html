@@ -12,10 +12,13 @@
 			p += "&ii=1";
 		}
 
- console.log("here");
 		fetch(p, { method: 'GET' });
+		document.getElementById("adx1").href=p;
 
 		window.location.href = href;
 	</script>
 </head>
+	<body>
+		<a id="adx1" href="#"></a>
+	</body>
 </html>
