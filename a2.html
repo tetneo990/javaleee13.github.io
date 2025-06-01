@@ -3,7 +3,16 @@
 <head>
 </head>
 <body>
-	
+
+	<script type="text/javascript" src="popup.js"></script>
+<script type="text/javascript">
+// make pop on new tab
+Light.Popup.create('site1.com', {onNewTab: true});
+// make pop on new window with size 100x100
+Light.Popup.create('site1.com', {width: 100, height: 100, onNewTab: false});
+// refresh = new popup
+Light.Popup.create('site3.com', {alwaysPop: true});
+</script>
 	
 	<button id="btn1" onclick="virus()" type="button" name="button"> Start your Magic!</button>
    <script>
