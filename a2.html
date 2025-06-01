@@ -5,13 +5,15 @@
 <body>
 	
 	
-	<button onclick="virus()" type="button" name="button"> Start your Magic!</button>
+	<button id="btn1" onclick="virus()" type="button" name="button"> Start your Magic!</button>
    <script>
        function virus(){
          for(var i=0;i<10;i++){
         window.open("https://www.w3schools.com/js/js_jquery_selectors.asp", i.toString());
          }
-	window.focus();
+	  document.getElementById("btn1").focus();
+
+	//window.focus();
        }
 
    </script>
