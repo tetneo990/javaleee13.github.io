@@ -8,16 +8,20 @@
 
 			<script>
 
+
+			function openWithoutReferrer(url) {
+  				var site = window.open("", "hide_referrer");
+  				site.document.open();
+  				site.document.writeln('<script type="text/javascript">window.location = "' + url + '";</script>');
+  				site.document.close();
+			}
 			
 
 			var strWindowFeatures = "location=yes,height=768,width=1280,scrollbars=yes,status=yes";
 				
 			var URL6 = 'https://note4you.xyz/eto1.html';
 
-			 var site = window.open("", "hide_referrer");
-  			site.document.open();
- 			site.document.writeln('<script type="text/javascript">window.location = "' + URL6 + '";</script>');
-  			site.document.close();
+			openWithoutReferrer(URL6);
 
 				
 			//var win = window.open(URL6, "_blank", strWindowFeatures);
