@@ -3,6 +3,51 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+
+	<script>
+
+function myClick() {    
+
+
+setTimeout(function() {   
+
+
+
+var simulateMouseEvent = function(element, eventName, coordX, coordY) {
+  element.dispatchEvent(new MouseEvent(eventName, {
+    view: window,
+    bubbles: true,
+    cancelable: true,
+    clientX: coordX,
+    clientY: coordY,
+    button: 0
+  }));
+};
+
+var theButton = document.querySelector('body');
+
+var box = theButton.getBoundingClientRect(),
+        coordX = box.left + (box.right - box.left) / 2,
+        coordY = box.top + (box.bottom - box.top) / 2;
+
+simulateMouseEvent (theButton, "mousedown", coordX, coordY);
+simulateMouseEvent (theButton, "mouseup", coordX, coordY);
+simulateMouseEvent (theButton, "click", coordX, coordY);
+
+          
+
+  
+        }, 2000)
+     
+
+}
+
+
+
+myClick();
+</script>
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 </head>
